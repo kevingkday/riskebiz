@@ -1,0 +1,7 @@
+# robots.txt for Riskebiz.com
+# User-agent: * (Allows all search engine web crawlers)
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://riskebiz.com/sitemap.xml
