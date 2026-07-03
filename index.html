@@ -51,36 +51,12 @@
     <header class="site-header">
         <div class="container header-container">
             <a class="logo-anchor" href="index.html">Riskebiz</a>
-
-            <!-- Desktop Navigation -->
-            <nav class="desktop-nav" aria-label="Main Navigation">
-                <a class="nav-link active" href="index.html">Home</a>
-                <a class="nav-link" href="coverages.html">Coverages</a>
-                <a class="nav-link" href="industries.html">Industries</a>
-                <a class="nav-link" href="articles.html">Articles</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-            </nav>
-
             <div class="header-actions">
-                <a class="btn btn-primary" href="contact.html">Ask a Question</a>
-
-                <!-- Mobile Navigation Toggle -->
-                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <span class="material-symbols-outlined">menu</span>
-                </button>
+                <a class="nav-link" href="articles.html" style="margin-right: 24px; font-weight: 500;">Articles</a>
+                <a class="btn btn-primary" href="#contact">Ask a Question</a>
             </div>
         </div>
     </header>
-
-    <!-- Mobile Drawer Menu -->
-    <div class="mobile-nav-drawer" role="dialog" aria-label="Mobile Navigation">
-        <a class="mobile-nav-link active" href="index.html">Home</a>
-        <a class="mobile-nav-link" href="coverages.html">Coverages</a>
-        <a class="mobile-nav-link" href="industries.html">Industries</a>
-        <a class="mobile-nav-link" href="articles.html">Articles</a>
-        <a class="mobile-nav-link" href="contact.html">Contact</a>
-        <a class="btn btn-primary" style="margin-top: 16px;" href="contact.html">Ask a Question</a>
-    </div>
 
     <!-- Main Content -->
     <main>
@@ -97,60 +73,81 @@
                     </h1>
 
                     <p class="font-body-lg hero-subheadline">
-                        These three critical, trade-related coverages are essential for doing business overseas, yet
-                        standard brokers rarely discuss them. Learn how to protect your international operations.
+                        Reducing the risk of risky business.
                     </p>
 
                     <div class="hero-ctas">
-                        <a class="btn btn-lg btn-primary" href="coverages.html">Explore Coverages</a>
-                        <a class="btn btn-lg btn-secondary" href="contact.html">Ask a Question</a>
+                        <a class="btn btn-lg btn-primary" href="#articles">Read Latest Briefings</a>
+                        <a class="btn btn-lg btn-secondary" href="#contact">Ask a Question</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Coverages Summary Section -->
-        <section class="bg-surface-lowest section-padding" aria-labelledby="coverages-title">
+        <!-- Coverages Section -->
+        <section class="bg-surface-lowest section-padding" aria-labelledby="coverages-title" id="coverages">
             <div class="container reveal">
                 <div class="mb-12 border-left-accent">
                     <h2 id="coverages-title" class="font-headline-md">Export &amp; Trade Coverages</h2>
-                    <p class="text-secondary mt-2">Essential protections for overseas trade and international operations
-                        that standard brokers overlook.</p>
+                    <p class="text-secondary mt-2">Essential protections for overseas trade and international operations that standard brokers overlook.</p>
                 </div>
 
                 <div class="grid-cols-3">
+                    
                     <!-- 1. Political Risk -->
-                    <article class="card">
-                        <a href="coverages.html#political-risk" class="card-link-wrapper"
-                            aria-label="Read more about Political Risk Insurance">
-                            <span class="material-symbols-outlined card-icon">public</span>
-                            <h3 class="font-headline-md card-title">Political Risk</h3>
-                            <p class="card-desc">Protecting overseas investments, facilities, and assets from host
-                                government intervention, expropriation, and political violence.</p>
-                        </a>
+                    <article class="card reveal" id="political-risk">
+                        <span class="material-symbols-outlined card-icon">public</span>
+                        <h3 class="font-headline-md card-title">Political Risk</h3>
+                        <p class="card-desc mb-6">
+                            Protects exporters, foreign investors, and international traders holding overseas assets, inventories, or equipment against host government interventions, expropriation, currency blockages, and contract frustration.
+                        </p>
+                        <div style="border-top: 1px solid var(--color-border-subtle); padding-top: 16px; margin-top: auto; width: 100%;">
+                            <span class="font-label-caps text-muted block mb-2" style="font-size: 11px;">Key Exposures Covered</span>
+                            <ul class="text-secondary font-body-md" style="list-style: inside square; font-size: 13px; margin-bottom: 20px; padding-left: 0;">
+                                <li>Asset Expropriation &amp; Confiscation</li>
+                                <li>Currency Inconvertibility</li>
+                                <li>Forced Abandonment / War Damages</li>
+                            </ul>
+                            <a class="btn btn-secondary btn-sm block text-center" href="#contact" style="width: 100%;">Inquire for Details</a>
+                        </div>
                     </article>
 
-                    <!-- 2. Kidnap & Ransom -->
-                    <article class="card">
-                        <a href="coverages.html#kidnap-ransom" class="card-link-wrapper"
-                            aria-label="Read more about Kidnap and Ransom (K&R) Insurance">
-                            <span class="material-symbols-outlined card-icon">security</span>
-                            <h3 class="font-headline-md card-title">Kidnap &amp; Ransom (K&amp;R)</h3>
-                            <p class="card-desc">Securing the safety of export personnel, overseas representatives, and
-                                international business travelers.</p>
-                        </a>
+                    <!-- 2. Kidnap & Ransom (K&R) -->
+                    <article class="card reveal" id="kidnap-ransom">
+                        <span class="material-symbols-outlined card-icon">security</span>
+                        <h3 class="font-headline-md card-title">Kidnap &amp; Ransom (K&amp;R)</h3>
+                        <p class="card-desc mb-6">
+                            Secures international sales teams, supply chain personnel, and overseas executives against foreign extortion, kidnapping, and security threats with immediate professional crisis response.
+                        </p>
+                        <div style="border-top: 1px solid var(--color-border-subtle); padding-top: 16px; margin-top: auto; width: 100%;">
+                            <span class="font-label-caps text-muted block mb-2" style="font-size: 11px;">Key Exposures Covered</span>
+                            <ul class="text-secondary font-body-md" style="list-style: inside square; font-size: 13px; margin-bottom: 20px; padding-left: 0;">
+                                <li>Crisis Consulting Fees</li>
+                                <li>Ransom &amp; Extortion Funding</li>
+                                <li>Emergency Evacuation &amp; Medical</li>
+                            </ul>
+                            <a class="btn btn-secondary btn-sm block text-center" href="#contact" style="width: 100%;">Inquire for Details</a>
+                        </div>
                     </article>
 
                     <!-- 3. Trade Credit -->
-                    <article class="card">
-                        <a href="coverages.html#trade-credit" class="card-link-wrapper"
-                            aria-label="Read more about Trade Credit Insurance">
-                            <span class="material-symbols-outlined card-icon">payments</span>
-                            <h3 class="font-headline-md card-title">Trade Credit</h3>
-                            <p class="card-desc">Insuring international accounts receivable against foreign buyer
-                                defaults, insolvencies, and currency transfer blocks.</p>
-                        </a>
+                    <article class="card reveal" id="trade-credit">
+                        <span class="material-symbols-outlined card-icon">payments</span>
+                        <h3 class="font-headline-md card-title">Trade Credit</h3>
+                        <p class="card-desc mb-6">
+                            Protects export accounts receivable portfolios against overseas buyer insolvencies, protracted defaults, and political non-payment or currency transfer restrictions.
+                        </p>
+                        <div style="border-top: 1px solid var(--color-border-subtle); padding-top: 16px; margin-top: auto; width: 100%;">
+                            <span class="font-label-caps text-muted block mb-2" style="font-size: 11px;">Key Exposures Covered</span>
+                            <ul class="text-secondary font-body-md" style="list-style: inside square; font-size: 13px; margin-bottom: 20px; padding-left: 0;">
+                                <li>Buyer Insolvency</li>
+                                <li>Protracted Commercial Default</li>
+                                <li>Sovereign Debt Non-Payment</li>
+                            </ul>
+                            <a class="btn btn-secondary btn-sm block text-center" href="#contact" style="width: 100%;">Inquire for Details</a>
+                        </div>
                     </article>
+
                 </div>
             </div>
         </section>
@@ -252,48 +249,106 @@
         </section>
 
         <!-- Industries Served -->
-        <section class="bg-surface-low section-padding" aria-labelledby="industries-title">
+        <section class="bg-surface-low section-padding" aria-labelledby="industries-title" id="industries">
             <div class="container reveal">
                 <h2 id="industries-title" class="font-headline-md text-center mb-12">Industries Served</h2>
                 <div class="industry-grid">
-                    <a href="industries.html#mining" class="industry-item">
+                    <div class="industry-item">
                         <span class="font-label-caps">Mining</span>
-                    </a>
-                    <a href="industries.html#energy" class="industry-item">
+                    </div>
+                    <div class="industry-item">
                         <span class="font-label-caps">Energy</span>
-                    </a>
-                    <a href="industries.html#technology" class="industry-item">
+                    </div>
+                    <div class="industry-item">
                         <span class="font-label-caps">Technology</span>
-                    </a>
-                    <a href="industries.html#manufacturing" class="industry-item">
+                    </div>
+                    <div class="industry-item">
                         <span class="font-label-caps">Manufacturing</span>
-                    </a>
-                    <a href="industries.html#exporters" class="industry-item">
+                    </div>
+                    <div class="industry-item">
                         <span class="font-label-caps">Exporters</span>
-                    </a>
-                    <a href="industries.html#construction" class="industry-item">
+                    </div>
+                    <div class="industry-item">
                         <span class="font-label-caps">Construction</span>
-                    </a>
-                    <a href="industries.html#ngos" class="industry-item">
+                    </div>
+                    <div class="industry-item">
                         <span class="font-label-caps">NGOs</span>
-                    </a>
-                    <a href="industries.html#professional-services" class="industry-item">
+                    </div>
+                    <div class="industry-item">
                         <span class="font-label-caps">Professional Services</span>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
 
 
-        <!-- Final CTA -->
-        <section class="section-padding text-center" aria-labelledby="cta-title">
+        <!-- Contact Inquiry Form Section -->
+        <section class="section-padding bg-background" aria-label="Inquiry Form" id="contact">
             <div class="container reveal">
-                <div class="max-w-3xl mx-auto">
-                    <h2 id="cta-title" class="font-display-lg mb-6">Have questions about specialized trade risks?</h2>
-                    <p class="font-body-lg text-muted mb-10">
+                <div class="max-w-3xl mx-auto text-center mb-10">
+                    <h2 id="contact-title" class="font-display-lg mb-6">Have questions about specialized trade risks?</h2>
+                    <p class="font-body-lg text-muted">
                         Submit a question or request more educational information about international risk management, political risk, or trade credit solutions.
                     </p>
-                    <a class="btn btn-lg btn-primary" href="contact.html">Submit an Inquiry</a>
+                </div>
+                
+                <div class="contact-container reveal">
+                    <form id="risk-inquiry-form" action="#" method="POST" aria-describedby="form-instructions">
+                        <p id="form-instructions" class="font-body-md text-secondary mb-8">
+                            Complete the form below. Our editorial and research team will respond to your educational inquiry as soon as possible.
+                        </p>
+                        
+                        <!-- Name -->
+                        <div class="form-group">
+                            <label class="form-label font-label-caps" for="user-name">Full Name *</label>
+                            <input class="form-control" type="text" id="user-name" name="name" placeholder="Executive Name" required />
+                        </div>
+                        
+                        <!-- Company -->
+                        <div class="form-group">
+                            <label class="form-label font-label-caps" for="user-company">Company *</label>
+                            <input class="form-control" type="text" id="user-company" name="company" placeholder="Corporate Entity Name" required />
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label class="form-label font-label-caps" for="user-email">Corporate Email *</label>
+                            <input class="form-control" type="email" id="user-email" name="email" placeholder="name@company.com" required />
+                        </div>
+                        
+                        <!-- Phone -->
+                        <div class="form-group">
+                            <label class="form-label font-label-caps" for="user-phone">Phone Number</label>
+                            <input class="form-control" type="tel" id="user-phone" name="phone" placeholder="+1 (555) 000-0000" />
+                        </div>
+                        
+                        <!-- Type of Risk -->
+                        <div class="form-group">
+                            <label class="form-label font-label-caps" for="risk-type">Topic of Interest</label>
+                             <select class="form-control" id="risk-type" name="risk_type">
+                                <option value="general">General Risk Inquiry</option>
+                                <option value="political-risk">Political Risk (Overseas Assets &amp; Contracts)</option>
+                                <option value="kidnap-ransom">Kidnap &amp; Ransom (Overseas Travel &amp; Personnel)</option>
+                                <option value="trade-credit">Trade Credit (Export Accounts Receivable)</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label class="form-label font-label-caps" for="user-message">Your Question / Message *</label>
+                            <textarea class="form-control" id="user-message" name="message" placeholder="Enter your question, feedback, or request for information..." required></textarea>
+                        </div>
+                        
+                        <!-- Consent Note -->
+                        <p class="form-note">
+                            * Denotes a required field. By submitting this form, you acknowledge that Riskebiz is an educational resources publication powered by Ocean Falls Insurance.
+                        </p>
+                        
+                        <!-- Submit -->
+                        <button class="btn btn-lg btn-primary block" style="width: 100%; margin-top: 32px;" type="submit">
+                            Submit Question / Inquiry
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -306,7 +361,7 @@
             <div class="footer-brand">
                 <a class="footer-title" href="index.html">RISKEBIZ</a>
                 <p class="footer-desc">
-                    Objective intelligence for export and trade risk. An Ocean Falls Insurance initiative.
+                    Reducing the risk of risky business.
                 </p>
             </div>
 
@@ -314,18 +369,8 @@
                 <h4 class="footer-heading">Navigation</h4>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="coverages.html">Coverages</a></li>
-                    <li><a href="industries.html">Industries</a></li>
                     <li><a href="articles.html">Articles</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="footer-heading">Company</h4>
-                <ul class="footer-links">
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Legal</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
@@ -343,12 +388,11 @@
 
         <div class="container footer-bottom">
             <span>&copy; 2026 Riskebiz. Ocean Falls Insurance.</span>
-            <span class="footer-bottom-tagline">PRECISION IN RISK</span>
+            <span class="footer-bottom-tagline">Reducing the risk of risky business.</span>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="script.js"></script>
 </body>
-
 </html>

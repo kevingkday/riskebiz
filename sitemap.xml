@@ -7,18 +7,6 @@
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://riskebiz.com/coverages.html</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://riskebiz.com/industries.html</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
         <loc>https://riskebiz.com/articles.html</loc>
         <lastmod>2026-07-02</lastmod>
         <changefreq>weekly</changefreq>
@@ -59,11 +47,5 @@
         <lastmod>2026-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.60</priority>
-    </url>
-    <url>
-        <loc>https://riskebiz.com/contact.html</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.70</priority>
     </url>
 </urlset>
