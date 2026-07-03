@@ -49,10 +49,16 @@
         <priority>0.60</priority>
     </url>
     <url>
-        <loc>https://riskebiz.com/about.html</loc>
+        <loc>https://riskebiz.com/article-risky-business-2026.html</loc>
         <lastmod>2026-07-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.70</priority>
+        <priority>0.60</priority>
+    </url>
+    <url>
+        <loc>https://riskebiz.com/article-risky-business-1997.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.60</priority>
     </url>
     <url>
         <loc>https://riskebiz.com/contact.html</loc>

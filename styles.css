@@ -936,3 +936,121 @@ textarea.form-control {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ==========================================================================
+   10. From the Archives & PDF Embedding
+   ========================================================================== */
+.archive-banner {
+    background-color: #fbf9f4; /* Eggshell wash */
+    border: 1px solid #e3dec9; /* Warm border */
+    border-left: 4px solid #c5a86a; /* Gold accent */
+    padding: 32px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+    .archive-banner {
+        flex-direction: column;
+        padding: 24px;
+    }
+}
+
+.archive-banner-icon {
+    font-size: 36px;
+    color: #c5a86a;
+    flex-shrink: 0;
+}
+
+.archive-banner-content {
+    flex-grow: 1;
+}
+
+.archive-banner-title {
+    font-family: var(--font-headline);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+}
+
+.archive-banner-text {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-on-surface-variant);
+    line-height: 1.6;
+}
+
+/* Vintage Badge Style */
+.badge-archive {
+    background-color: #f5efe2;
+    color: #8c6f3d;
+    border: 1px solid #ebdcb9;
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-label);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.badge-featured {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border: 1px solid #bae6fd;
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-label);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* PDF Embed Framework */
+.pdf-viewer-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+    border: 1px solid var(--color-border-subtle);
+    background-color: var(--color-surface-lowest);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.pdf-fallback-box {
+    padding: 48px;
+    text-align: center;
+    background-color: var(--color-surface-low);
+    border: 1px dashed var(--color-border-subtle);
+    border-radius: var(--radius-sm);
+    margin-bottom: 40px;
+}
+
+/* Featured Article Layout */
+.featured-article-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+    margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+    .featured-article-card {
+        flex-direction: row;
+    }
+    .featured-article-img {
+        width: 45% !important;
+        height: auto !important;
+    }
+    .featured-article-body {
+        width: 55% !important;
+        padding: 40px !important;
+    }
+}
+
+
