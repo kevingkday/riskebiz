@@ -368,7 +368,6 @@ select:focus-visible {
     font-size: 14px;
     color: var(--color-on-secondary-container);
     line-height: 1.5;
-    flex-grow: 1;
 }
 
 /* Editorial Article Layouts */
