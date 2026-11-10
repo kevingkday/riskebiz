@@ -115,8 +115,9 @@ function initScrollReveal() {
 }
 
 /**
- * Compact third-party market notes under Executive Intelligence.
- * Reads news.json. Does nothing on pages that do not include the teaser.
+ * Current week's market notes under Executive Intelligence.
+ * Renders every article in news.json, newest date first.
+ * Does nothing on pages that do not include the teaser.
  */
 function initMarketNotes() {
     const list = document.getElementById('market-notes-list');
@@ -130,8 +131,7 @@ function initMarketNotes() {
         .then((data) => {
             const articles = (data.articles || [])
                 .slice()
-                .sort((a, b) => String(b.date).localeCompare(String(a.date)))
-                .slice(0, 3);
+                .sort((a, b) => String(b.date).localeCompare(String(a.date)));
             if (!articles.length) {
                 list.innerHTML = '<li>No market notes in the current file.</li>';
                 return;
