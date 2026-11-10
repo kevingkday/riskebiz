@@ -533,6 +533,38 @@ header.site-header.shadow-sm {
     gap: 16px;
 }
 
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+@media (max-width: 720px) {
+    header.site-header {
+        height: auto;
+    }
+
+    .header-container {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header-nav {
+        gap: 16px;
+    }
+
+    .header-actions .btn {
+        padding: 10px 14px;
+    }
+}
+
 /* Mobile Menu Button */
 .mobile-menu-toggle {
     background: transparent;
@@ -1050,6 +1082,82 @@ textarea.form-control {
         width: 55% !important;
         padding: 40px !important;
     }
+}
+
+/* Homepage teaser for the trade risk map */
+.market-notes {
+    margin-top: 48px;
+    padding: 24px;
+    border: 1px solid var(--color-border-subtle);
+    background: var(--color-surface-lowest);
+    border-radius: var(--radius-sm);
+}
+
+.market-notes-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.market-notes h3 {
+    font-size: 22px;
+    margin: 8px 0 6px;
+}
+
+.market-notes-head p {
+    color: var(--color-on-surface-variant);
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 40rem;
+}
+
+.market-notes-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+@media (min-width: 800px) {
+    .market-notes-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.market-notes-list a {
+    display: block;
+    height: 100%;
+    padding: 14px;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-sm);
+    background: var(--color-background);
+}
+
+.market-notes-list a:hover {
+    border-color: var(--color-primary);
+}
+
+.market-notes-list strong {
+    display: block;
+    font-family: var(--font-headline);
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+.market-notes-list span,
+.market-note-summary {
+    color: var(--color-on-surface-variant);
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.market-note-summary {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 

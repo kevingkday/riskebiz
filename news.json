@@ -1,0 +1,155 @@
+{
+  "_comment": "Source of truth for market notes on the trade risk map and the homepage teaser. Keys: id, title, summary, url, source, date (YYYY-MM-DD), coverages (subset of political_risk, trade_credit, kidnap_ransom), hotspot_ids (ids from hotspots.json), tags (short strings). Add an item only with a working source URL. Do not invent dates or headlines.",
+  "lastUpdated": "2026-11-10",
+  "schemaVersion": 1,
+  "articles": [
+    {
+      "id": "un-sudan-drones-2026-11-03",
+      "title": "UN warns of the impact of drone strikes on civilian infrastructure in Sudan",
+      "summary": "UN News reported that the UN Resident and Humanitarian Coordinator in Sudan described intensifying drone attacks disrupting electricity, water, and fuel supplies and delaying humanitarian deliveries.",
+      "url": "https://news.un.org/en/story/2026/11/1168731",
+      "source": "UN News",
+      "date": "2026-11-03",
+      "coverages": [
+        "political_risk"
+      ],
+      "hotspot_ids": [
+        "sdn"
+      ],
+      "tags": [
+        "sudan",
+        "political violence"
+      ]
+    },
+    {
+      "id": "ebrd-ukraine-war-risk-2026-10-13",
+      "title": "EBRD, EU and Aon expand a war-risk insurance facility for Ukrainian businesses",
+      "summary": "The EBRD said it is increasing its Ukraine war-risk reinsurance facility from €110 million to €150 million, adding warehouse goods and gas-related assets, and cited attacks on infrastructure and a renewed blockade of Black Sea ports.",
+      "url": "https://www.ebrd.com/home/news-and-events/news/2026/ebrd--eu-and-aon-expand-war-risk-insurance-facility-to-meet-evol.html",
+      "source": "European Bank for Reconstruction and Development",
+      "date": "2026-10-13",
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "hotspot_ids": [
+        "ukr"
+      ],
+      "tags": [
+        "ukraine",
+        "war risk",
+        "trade"
+      ]
+    },
+    {
+      "id": "treasury-vtb-iran-2026-09-14",
+      "title": "U.S. Treasury designates VTB Bank for Iranian sanctions evasion",
+      "summary": "OFAC designated Russia’s VTB Bank for correspondent relationships with sanctioned Iranian banks. The release says the bank was already designated in connection with Russia’s financial sector, and that blocked property is off limits to U.S. persons unless authorized.",
+      "url": "https://home.treasury.gov/news/press-releases/sb0629",
+      "source": "U.S. Department of the Treasury",
+      "date": "2026-09-14",
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "hotspot_ids": [
+        "rus",
+        "irn"
+      ],
+      "tags": [
+        "sanctions",
+        "russia",
+        "iran"
+      ]
+    },
+    {
+      "id": "un-haiti-kenscoff-2026-08-28",
+      "title": "Security Council hears of killings and abductions in the Kenscoff attack",
+      "summary": "On 28 August 2026 the UN Security Council was briefed on a 23–24 August gang attack in Kenscoff that killed dozens of people, including children, and in which dozens more were injured or abducted.",
+      "url": "https://press.un.org/en/2026/sc16444.doc.htm",
+      "source": "UN Meetings Coverage",
+      "date": "2026-08-28",
+      "coverages": [
+        "political_risk",
+        "kidnap_ransom"
+      ],
+      "hotspot_ids": [
+        "hti"
+      ],
+      "tags": [
+        "haiti",
+        "abduction"
+      ]
+    },
+    {
+      "id": "ohchr-myanmar-2026-08-25",
+      "title": "OHCHR says the human rights situation in Myanmar has deteriorated further",
+      "summary": "A 25 August 2026 OHCHR release, on a UN report covering June 2025 through May 2026, describes airstrikes, arson, displacement, denial of assistance, and unlawful confiscation of land and residential property.",
+      "url": "https://www.ohchr.org/en/press-releases/2026/08/human-rights-situation-myanmar-plummets-new-low-amid-unrelenting-violations",
+      "source": "Office of the UN High Commissioner for Human Rights",
+      "date": "2026-08-25",
+      "coverages": [
+        "political_risk"
+      ],
+      "hotspot_ids": [
+        "mmr"
+      ],
+      "tags": [
+        "myanmar",
+        "political violence"
+      ]
+    },
+    {
+      "id": "dfc-miga-ukraine-2026-06-25",
+      "title": "DFC and MIGA agree a political risk insurance framework for a Ukraine investment fund",
+      "summary": "On 25 June 2026, DFC and the World Bank Group’s MIGA said they signed a cooperation agreement to establish a political risk insurance framework for the United States-Ukraine Reconstruction Investment Fund.",
+      "url": "https://www.dfc.gov/media/press-releases/dfc-miga-sign-agreement-advance-political-risk-insurance-ukraine",
+      "source": "U.S. International Development Finance Corporation",
+      "date": "2026-06-25",
+      "coverages": [
+        "political_risk"
+      ],
+      "hotspot_ids": [
+        "ukr"
+      ],
+      "tags": [
+        "ukraine",
+        "political risk insurance"
+      ]
+    },
+    {
+      "id": "riskebiz-ukraine-briefing",
+      "title": "Political risk insurance for Canadian companies operating in Ukraine",
+      "summary": "A Riskebiz briefing on political risk for Canadian companies operating in Ukraine, including how conflict affects assets and why ordinary property policies may not respond.",
+      "url": "https://riskebiz.com/article-ukraine.html",
+      "source": "Riskebiz",
+      "date": "2024-10-24",
+      "coverages": [
+        "political_risk"
+      ],
+      "hotspot_ids": [
+        "ukr"
+      ],
+      "tags": [
+        "ukraine",
+        "riskebiz briefing"
+      ]
+    },
+    {
+      "id": "riskebiz-trade-credit-briefing",
+      "title": "Trade credit insurance for exporters",
+      "summary": "A Riskebiz briefing on trade credit insurance for exporters, including buyer non-payment and the role of receivables cover in export sales.",
+      "url": "https://riskebiz.com/article-credit.html",
+      "source": "Riskebiz",
+      "date": "2024-08-15",
+      "coverages": [
+        "trade_credit"
+      ],
+      "hotspot_ids": [],
+      "tags": [
+        "trade credit",
+        "riskebiz briefing"
+      ]
+    }
+  ]
+}
