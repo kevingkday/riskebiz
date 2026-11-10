@@ -52,7 +52,10 @@
         <div class="container header-container">
             <a class="logo-anchor" href="index.html">Riskebiz</a>
             <div class="header-actions">
-                <a class="nav-link" href="articles.html" style="margin-right: 24px; font-weight: 500;">Articles</a>
+                <nav class="header-nav" aria-label="Primary">
+                    <a class="nav-link" href="map.html">Map</a>
+                    <a class="nav-link" href="articles.html">Articles</a>
+                </nav>
                 <a class="btn btn-primary" href="#contact">Ask a Question</a>
             </div>
         </div>
@@ -340,6 +343,19 @@
                     </article>
                 </div>
             </div>
+            <div class="container">
+                <div class="market-notes reveal" id="market-notes">
+                    <div class="market-notes-head">
+                        <div>
+                            <span class="chip">Market notes</span>
+                            <h3>Trade risk map</h3>
+                            <p>Places where political risk and trade credit cover are especially relevant, drawn from the OECD country-risk list and sourced reporting. These notes are separate from the briefings above.</p>
+                        </div>
+                        <a class="btn btn-secondary" href="map.html">Open the map</a>
+                    </div>
+                    <ul class="market-notes-list" id="market-notes-list" aria-label="Recent market notes"></ul>
+                </div>
+            </div>
         </section>
 
         <!-- Industries Served -->
@@ -425,6 +441,7 @@
                 <h4 class="footer-heading">Navigation</h4>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="map.html">Map</a></li>
                     <li><a href="articles.html">Articles</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>

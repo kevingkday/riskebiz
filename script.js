@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initHeaderScroll();
     initScrollReveal();
+    initMarketNotes();
 });
 
 /**
@@ -111,4 +112,60 @@ function initScrollReveal() {
     revealElements.forEach(el => {
         observer.observe(el);
     });
+}
+
+/**
+ * Compact third-party market notes under Executive Intelligence.
+ * Reads news.json. Does nothing on pages that do not include the teaser.
+ */
+function initMarketNotes() {
+    const list = document.getElementById('market-notes-list');
+    if (!list) return;
+
+    fetch('news.json')
+        .then((response) => {
+            if (!response.ok) throw new Error('news');
+            return response.json();
+        })
+        .then((data) => {
+            const articles = (data.articles || [])
+                .slice()
+                .sort((a, b) => String(b.date).localeCompare(String(a.date)))
+                .slice(0, 3);
+            if (!articles.length) {
+                list.innerHTML = '<li>No market notes in the current file.</li>';
+                return;
+            }
+            list.innerHTML = articles.map((article) => {
+                const external = !String(article.url).startsWith('https://riskebiz.com');
+                const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : '';
+                return (
+                    '<li><a href="' + escapeNote(article.url) + '"' + attrs + '>' +
+                    '<span class="font-label-caps">' + escapeNote(article.source) + ' · ' + escapeNote(formatNoteDate(article.date)) + '</span>' +
+                    '<strong>' + escapeNote(article.title) + '</strong>' +
+                    '<span class="market-note-summary">' + escapeNote(article.summary) + '</span>' +
+                    '</a></li>'
+                );
+            }).join('');
+        })
+        .catch(() => {
+            list.innerHTML = '<li>Market notes could not be loaded.</li>';
+        });
+}
+
+function formatNoteDate(iso) {
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const [year, month, day] = String(iso || '').split('-').map(Number);
+    if (!year || !month || !day) return iso || '';
+    return day + ' ' + months[month - 1] + ' ' + year;
+}
+
+function escapeNote(value) {
+    return String(value ?? '').replace(/[&<>"']/g, (ch) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+    }[ch]));
 }

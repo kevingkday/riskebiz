@@ -1,0 +1,2314 @@
+{
+  "_comment": "Source of truth for the trade risk map. A weekly updater may edit this file in a pull request and should not rewrite map.html. Keep these keys stable. Hotspot keys: id, name, iso3 (string or null), kind (country|region), lat, lng, location_basis (country_centroid|named_place), oecd_category (integer or null), oecd_previous (integer or null), oecd_valid_as_of (YYYY-MM-DD or null), oecd_source_url (string or null), oecd_notes (array of OECD footnote numbers as strings), coverages (subset of political_risk, trade_credit, kidnap_ransom), exposures (subset of expropriation, currency_inconvertibility, political_violence, contract_frustration, sovereign_default, buyer_default, sanctions), notes, source_url, last_verified (YYYY-MM-DD). Country coordinates are latlng centroids from https://github.com/mledoze/countries (retrieved 2026-11-10). OECD iso3 XKV (Kosovo) uses that dataset's Kosovo centroid, stored there as cca3 UNK. Do not invent OECD categories. Copy them from the current official PDF. High-income participants marked unclassified, and OECD notes (5), (6), (7), and (8), have no category and are not pinned. Do not add a narrative or an exposure unless a URL in source_url or the notes supports it. kidnap_ransom is not implied by a high OECD category. Bab el-Mandeb uses the OpenStreetMap centroid of relation 11169730.",
+  "lastUpdated": "2026-11-10",
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "name": "OECD Country Risk Classification page",
+      "url": "https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "OECD prevailing country risk classification, English PDF, valid as of 16 October 2026",
+      "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "Country centroids (mledoze/countries latlng)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "OpenStreetMap relation for the Bab el-Mandeb strait",
+      "url": "https://www.openstreetmap.org/relation/11169730",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "EBRD Ukraine war-risk facility",
+      "url": "https://www.ebrd.com/home/news-and-events/news/2026/ebrd--eu-and-aon-expand-war-risk-insurance-facility-to-meet-evol.html",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "DFC and MIGA Ukraine political risk insurance agreement",
+      "url": "https://www.dfc.gov/media/press-releases/dfc-miga-sign-agreement-advance-political-risk-insurance-ukraine",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "U.S. Treasury OFAC designation of VTB Bank",
+      "url": "https://home.treasury.gov/news/press-releases/sb0629",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "UN News on Sudan",
+      "url": "https://news.un.org/en/story/2026/11/1168731",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "UN Security Council coverage on Haiti",
+      "url": "https://press.un.org/en/2026/sc16444.doc.htm",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "OHCHR on Myanmar",
+      "url": "https://www.ohchr.org/en/press-releases/2026/08/human-rights-situation-myanmar-plummets-new-low-amid-unrelenting-violations",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "U.S. Maritime Administration advisory 2026-013",
+      "url": "https://www.maritime.dot.gov/msci/2026-013-red-sea-bab-el-mandeb-strait-gulf-aden-arabian-sea-and-somali-basin-houthi-attacks",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "hotspots": [
+    {
+      "id": "afg",
+      "name": "Afghanistan",
+      "iso3": "AFG",
+      "kind": "country",
+      "lat": 33,
+      "lng": 65,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "dza",
+      "name": "Algeria",
+      "iso3": "DZA",
+      "kind": "country",
+      "lat": 28,
+      "lng": 3,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "ago",
+      "name": "Angola",
+      "iso3": "AGO",
+      "kind": "country",
+      "lat": -12.5,
+      "lng": 18.5,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "atg",
+      "name": "Antigua and Barbuda",
+      "iso3": "ATG",
+      "kind": "country",
+      "lat": 17.05,
+      "lng": -61.8,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "arg",
+      "name": "Argentina",
+      "iso3": "ARG",
+      "kind": "country",
+      "lat": -34,
+      "lng": -64,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "arm",
+      "name": "Armenia",
+      "iso3": "ARM",
+      "kind": "country",
+      "lat": 40,
+      "lng": 45,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "bab-el-mandeb",
+      "name": "Bab el-Mandeb",
+      "iso3": null,
+      "kind": "region",
+      "lat": 12.5743764,
+      "lng": 43.3128158,
+      "location_basis": "named_place",
+      "oecd_category": null,
+      "oecd_previous": null,
+      "oecd_valid_as_of": null,
+      "oecd_source_url": null,
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "kidnap_ransom"
+      ],
+      "exposures": [
+        "political_violence"
+      ],
+      "notes": "This pin marks the Bab el-Mandeb strait, at the OpenStreetMap centroid of the strait, not a country score. U.S. Maritime Administration advisory 2026-013, marked Active when checked on 10 November 2026, says Houthi forces have resumed attacks on commercial ships in the Red Sea, Bab el-Mandeb, Gulf of Aden, Arabian Sea, and Somali Basin. The advisory reports missile strikes on the tankers Amzan and Daisy off Yanbu on 24 August 2026, a blockade of Saudi-affiliated shipping through Bab el-Mandeb declared on 20 July 2026, and potential hostile actions that include illegal boardings, detentions, and seizures. There is no OECD category for a shipping lane. Political risk is listed for political violence against goods in transit. Kidnap and ransom is listed because the advisory describes boardings, detentions, and seizures, not as a general label for nearby countries.",
+      "source_url": "https://www.maritime.dot.gov/msci/2026-013-red-sea-bab-el-mandeb-strait-gulf-aden-arabian-sea-and-somali-basin-houthi-attacks",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "bhr",
+      "name": "Bahrain",
+      "iso3": "BHR",
+      "kind": "country",
+      "lat": 26,
+      "lng": 50.55,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "bgd",
+      "name": "Bangladesh",
+      "iso3": "BGD",
+      "kind": "country",
+      "lat": 24,
+      "lng": 90,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "blr",
+      "name": "Belarus",
+      "iso3": "BLR",
+      "kind": "country",
+      "lat": 53,
+      "lng": 28,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "ben",
+      "name": "Benin",
+      "iso3": "BEN",
+      "kind": "country",
+      "lat": 9.5,
+      "lng": 2.25,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "btn",
+      "name": "Bhutan",
+      "iso3": "BTN",
+      "kind": "country",
+      "lat": 27.5,
+      "lng": 90.5,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "bol",
+      "name": "Bolivia",
+      "iso3": "BOL",
+      "kind": "country",
+      "lat": -17,
+      "lng": -65,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "bih",
+      "name": "Bosnia and Herzegovina",
+      "iso3": "BIH",
+      "kind": "country",
+      "lat": 44,
+      "lng": 18,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "bfa",
+      "name": "Burkina Faso",
+      "iso3": "BFA",
+      "kind": "country",
+      "lat": 13,
+      "lng": -2,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "bdi",
+      "name": "Burundi",
+      "iso3": "BDI",
+      "kind": "country",
+      "lat": -3.5,
+      "lng": 30,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "cpv",
+      "name": "Cabo Verde",
+      "iso3": "CPV",
+      "kind": "country",
+      "lat": 16,
+      "lng": -24,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "khm",
+      "name": "Cambodia",
+      "iso3": "KHM",
+      "kind": "country",
+      "lat": 13,
+      "lng": 105,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "cmr",
+      "name": "Cameroon",
+      "iso3": "CMR",
+      "kind": "country",
+      "lat": 6,
+      "lng": 12,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous category on that list was 6; the prevailing category is 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "caf",
+      "name": "Central African Republic",
+      "iso3": "CAF",
+      "kind": "country",
+      "lat": 7,
+      "lng": 21,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "tcd",
+      "name": "Chad",
+      "iso3": "TCD",
+      "kind": "country",
+      "lat": 15,
+      "lng": 19,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "cog",
+      "name": "Congo",
+      "iso3": "COG",
+      "kind": "country",
+      "lat": -1,
+      "lng": 15,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "cub",
+      "name": "Cuba",
+      "iso3": "CUB",
+      "kind": "country",
+      "lat": 21.5,
+      "lng": -80,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "cuw",
+      "name": "Curaçao",
+      "iso3": "CUW",
+      "kind": "country",
+      "lat": 12.116667,
+      "lng": -68.933333,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "civ",
+      "name": "Côte d’Ivoire",
+      "iso3": "CIV",
+      "kind": "country",
+      "lat": 8,
+      "lng": -5,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "prk",
+      "name": "Democratic People's Republic of Korea",
+      "iso3": "PRK",
+      "kind": "country",
+      "lat": 40,
+      "lng": 127,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "cod",
+      "name": "Democratic Republic of the Congo",
+      "iso3": "COD",
+      "kind": "country",
+      "lat": 0,
+      "lng": 25,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "dji",
+      "name": "Djibouti",
+      "iso3": "DJI",
+      "kind": "country",
+      "lat": 11.5,
+      "lng": 43,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "ecu",
+      "name": "Ecuador",
+      "iso3": "ECU",
+      "kind": "country",
+      "lat": -2,
+      "lng": -77.5,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "egy",
+      "name": "Egypt",
+      "iso3": "EGY",
+      "kind": "country",
+      "lat": 27,
+      "lng": 30,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "slv",
+      "name": "El Salvador",
+      "iso3": "SLV",
+      "kind": "country",
+      "lat": 13.83333333,
+      "lng": -88.91666666,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "gnq",
+      "name": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "kind": "country",
+      "lat": 2,
+      "lng": 10,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "eri",
+      "name": "Eritrea",
+      "iso3": "ERI",
+      "kind": "country",
+      "lat": 15,
+      "lng": 39,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "swz",
+      "name": "Eswatini",
+      "iso3": "SWZ",
+      "kind": "country",
+      "lat": -26.5,
+      "lng": 31.5,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "eth",
+      "name": "Ethiopia",
+      "iso3": "ETH",
+      "kind": "country",
+      "lat": 8,
+      "lng": 38,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "fji",
+      "name": "Fiji",
+      "iso3": "FJI",
+      "kind": "country",
+      "lat": -18,
+      "lng": 175,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "gab",
+      "name": "Gabon",
+      "iso3": "GAB",
+      "kind": "country",
+      "lat": -1,
+      "lng": 11.75,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "gmb",
+      "name": "Gambia",
+      "iso3": "GMB",
+      "kind": "country",
+      "lat": 13.46666666,
+      "lng": -16.56666666,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "geo",
+      "name": "Georgia",
+      "iso3": "GEO",
+      "kind": "country",
+      "lat": 42,
+      "lng": 43.5,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "gha",
+      "name": "Ghana",
+      "iso3": "GHA",
+      "kind": "country",
+      "lat": 8,
+      "lng": -2,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "gin",
+      "name": "Guinea",
+      "iso3": "GIN",
+      "kind": "country",
+      "lat": 11,
+      "lng": -10,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous category on that list was 7; the prevailing category is 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "gnb",
+      "name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "kind": "country",
+      "lat": 12,
+      "lng": -15,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "hti",
+      "name": "Haiti",
+      "iso3": "HTI",
+      "kind": "country",
+      "lat": 19,
+      "lng": -72.41666666,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit",
+        "kidnap_ransom"
+      ],
+      "exposures": [
+        "political_violence"
+      ],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 28 August 2026, the UN Security Council was told that gangs attacked Kenscoff on the night of 23 to 24 August, killing dozens of people, including children, and that dozens more were injured or abducted. The same briefing said the UN Integrated Office in Haiti had recorded 1,408 people killed and 656 injured from April through June 2026. Kidnap and ransom is listed because that briefing describes abduction, not because of the OECD category alone.",
+      "source_url": "https://press.un.org/en/2026/sc16444.doc.htm",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "hnd",
+      "name": "Honduras",
+      "iso3": "HND",
+      "kind": "country",
+      "lat": 15,
+      "lng": -86.5,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "irn",
+      "name": "Iran",
+      "iso3": "IRN",
+      "kind": "country",
+      "lat": 32,
+      "lng": 53,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [
+        "sanctions"
+      ],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 14 September 2026, the U.S. Treasury’s Office of Foreign Assets Control designated VTB Bank for correspondent relationships with sanctioned Iranian banks and said foreign financial institutions that keep dealing with the Iranian regime face secondary sanctions risk. Sanctions of this kind can affect contracts and the collection of payment.",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0629",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "irq",
+      "name": "Iraq",
+      "iso3": "IRQ",
+      "kind": "country",
+      "lat": 33,
+      "lng": 44,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "jam",
+      "name": "Jamaica",
+      "iso3": "JAM",
+      "kind": "country",
+      "lat": 18.25,
+      "lng": -77.5,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "jor",
+      "name": "Jordan",
+      "iso3": "JOR",
+      "kind": "country",
+      "lat": 31,
+      "lng": 36,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "kaz",
+      "name": "Kazakhstan",
+      "iso3": "KAZ",
+      "kind": "country",
+      "lat": 48,
+      "lng": 68,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "ken",
+      "name": "Kenya",
+      "iso3": "KEN",
+      "kind": "country",
+      "lat": 1,
+      "lng": 38,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "xkv",
+      "name": "Kosovo",
+      "iso3": "XKV",
+      "kind": "country",
+      "lat": 42.666667,
+      "lng": 21.166667,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "4"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (4): the designation is without prejudice to positions on status, and is in line with UN Security Council Resolution 1244/99 and the ICJ advisory opinion on Kosovo’s declaration of independence.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "kgz",
+      "name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "kind": "country",
+      "lat": 41,
+      "lng": 75,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "lao",
+      "name": "Lao People’s Democratic Republic",
+      "iso3": "LAO",
+      "kind": "country",
+      "lat": 18,
+      "lng": 105,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "lbn",
+      "name": "Lebanon",
+      "iso3": "LBN",
+      "kind": "country",
+      "lat": 33.83333333,
+      "lng": 35.83333333,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "lso",
+      "name": "Lesotho",
+      "iso3": "LSO",
+      "kind": "country",
+      "lat": -29.5,
+      "lng": 28.5,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "lbr",
+      "name": "Liberia",
+      "iso3": "LBR",
+      "kind": "country",
+      "lat": 6.5,
+      "lng": -9.5,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "lby",
+      "name": "Libya",
+      "iso3": "LBY",
+      "kind": "country",
+      "lat": 25,
+      "lng": 17,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "mdg",
+      "name": "Madagascar",
+      "iso3": "MDG",
+      "kind": "country",
+      "lat": -20,
+      "lng": 47,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "mwi",
+      "name": "Malawi",
+      "iso3": "MWI",
+      "kind": "country",
+      "lat": -13.5,
+      "lng": 34,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "mdv",
+      "name": "Maldives",
+      "iso3": "MDV",
+      "kind": "country",
+      "lat": 3.25,
+      "lng": 73,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "mli",
+      "name": "Mali",
+      "iso3": "MLI",
+      "kind": "country",
+      "lat": 17,
+      "lng": -4,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "mrt",
+      "name": "Mauritania",
+      "iso3": "MRT",
+      "kind": "country",
+      "lat": 20,
+      "lng": -12,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "mda",
+      "name": "Moldova",
+      "iso3": "MDA",
+      "kind": "country",
+      "lat": 47,
+      "lng": 29,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "mng",
+      "name": "Mongolia",
+      "iso3": "MNG",
+      "kind": "country",
+      "lat": 46,
+      "lng": 105,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "mne",
+      "name": "Montenegro",
+      "iso3": "MNE",
+      "kind": "country",
+      "lat": 42.5,
+      "lng": 19.3,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "moz",
+      "name": "Mozambique",
+      "iso3": "MOZ",
+      "kind": "country",
+      "lat": -18.25,
+      "lng": 35,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "mmr",
+      "name": "Myanmar",
+      "iso3": "MMR",
+      "kind": "country",
+      "lat": 22,
+      "lng": 98,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [
+        "political_violence",
+        "expropriation"
+      ],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. An Office of the UN High Commissioner for Human Rights release dated 25 August 2026, on a report covering 1 June 2025 to 31 May 2026, describes airstrikes, arson, displacement, and denial of assistance by Myanmar’s military, and records unlawful confiscation of land and residential property.",
+      "source_url": "https://www.ohchr.org/en/press-releases/2026/08/human-rights-situation-myanmar-plummets-new-low-amid-unrelenting-violations",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "nam",
+      "name": "Namibia",
+      "iso3": "NAM",
+      "kind": "country",
+      "lat": -22,
+      "lng": 17,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "npl",
+      "name": "Nepal",
+      "iso3": "NPL",
+      "kind": "country",
+      "lat": 28,
+      "lng": 84,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "nic",
+      "name": "Nicaragua",
+      "iso3": "NIC",
+      "kind": "country",
+      "lat": 13,
+      "lng": -85,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "ner",
+      "name": "Niger",
+      "iso3": "NER",
+      "kind": "country",
+      "lat": 16,
+      "lng": 8,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "nga",
+      "name": "Nigeria",
+      "iso3": "NGA",
+      "kind": "country",
+      "lat": 10,
+      "lng": 8,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "mkd",
+      "name": "Northern Macedonia",
+      "iso3": "MKD",
+      "kind": "country",
+      "lat": 41.83333333,
+      "lng": 22,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "pak",
+      "name": "Pakistan",
+      "iso3": "PAK",
+      "kind": "country",
+      "lat": 30,
+      "lng": 70,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "png",
+      "name": "Papua New Guinea",
+      "iso3": "PNG",
+      "kind": "country",
+      "lat": -6,
+      "lng": 147,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "rus",
+      "name": "Russia",
+      "iso3": "RUS",
+      "kind": "country",
+      "lat": 60,
+      "lng": 100,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [
+        "sanctions"
+      ],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 14 September 2026, the U.S. Treasury’s Office of Foreign Assets Control designated VTB Bank for involvement in Iranian sanctions evasion. The release states that VTB was already designated in connection with the Russian financial sector, and that property of the blocked person in the United States or held by U.S. persons is blocked unless authorized. Sanctions of this kind can affect contracts and the collection of payment.",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0629",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "rwa",
+      "name": "Rwanda",
+      "iso3": "RWA",
+      "kind": "country",
+      "lat": -2,
+      "lng": 30,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "sen",
+      "name": "Senegal",
+      "iso3": "SEN",
+      "kind": "country",
+      "lat": 14,
+      "lng": -14,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "sle",
+      "name": "Sierra Leone",
+      "iso3": "SLE",
+      "kind": "country",
+      "lat": 8.5,
+      "lng": -11.5,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "som",
+      "name": "Somalia",
+      "iso3": "SOM",
+      "kind": "country",
+      "lat": 10,
+      "lng": 49,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "ssd",
+      "name": "South Sudan",
+      "iso3": "SSD",
+      "kind": "country",
+      "lat": 7,
+      "lng": 30,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "lka",
+      "name": "Sri Lanka",
+      "iso3": "LKA",
+      "kind": "country",
+      "lat": 7,
+      "lng": 81,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "sdn",
+      "name": "Sudan",
+      "iso3": "SDN",
+      "kind": "country",
+      "lat": 15,
+      "lng": 30,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [
+        "political_violence"
+      ],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 3 November 2026, UN News reported that the UN Resident and Humanitarian Coordinator in Sudan described intensifying drone attacks on civilian infrastructure, disrupting electricity, water, and fuel supplies and delaying humanitarian deliveries.",
+      "source_url": "https://news.un.org/en/story/2026/11/1168731",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "sur",
+      "name": "Suriname",
+      "iso3": "SUR",
+      "kind": "country",
+      "lat": 4,
+      "lng": -56,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "syr",
+      "name": "Syrian Arab Republic",
+      "iso3": "SYR",
+      "kind": "country",
+      "lat": 35,
+      "lng": 38,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "tjk",
+      "name": "Tajikistan",
+      "iso3": "TJK",
+      "kind": "country",
+      "lat": 39,
+      "lng": 71,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "tza",
+      "name": "Tanzania",
+      "iso3": "TZA",
+      "kind": "country",
+      "lat": -6,
+      "lng": 35,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "tls",
+      "name": "Timor-Leste",
+      "iso3": "TLS",
+      "kind": "country",
+      "lat": -8.83333333,
+      "lng": 125.91666666,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "tgo",
+      "name": "Togo",
+      "iso3": "TGO",
+      "kind": "country",
+      "lat": 8,
+      "lng": 1.16666666,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [
+        "9"
+      ],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "tun",
+      "name": "Tunisia",
+      "iso3": "TUN",
+      "kind": "country",
+      "lat": 34,
+      "lng": 9,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "tkm",
+      "name": "Turkmenistan",
+      "iso3": "TKM",
+      "kind": "country",
+      "lat": 40,
+      "lng": 60,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "tur",
+      "name": "Türkiye",
+      "iso3": "TUR",
+      "kind": "country",
+      "lat": 39,
+      "lng": 35,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "uga",
+      "name": "Uganda",
+      "iso3": "UGA",
+      "kind": "country",
+      "lat": 1,
+      "lng": 32,
+      "location_basis": "country_centroid",
+      "oecd_category": 6,
+      "oecd_previous": 6,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "ukr",
+      "name": "Ukraine",
+      "iso3": "UKR",
+      "kind": "country",
+      "lat": 49,
+      "lng": 32,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [
+        "political_violence"
+      ],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. Separate from the category, the EBRD said on 13 October 2026 that it is raising its Ukraine war-risk insurance facility from €110 million to €150 million after the earlier capacity was fully used, citing intensifying attacks on energy, transport, logistics, and civilian infrastructure and a renewed blockade of Black Sea ports. On 25 June 2026, the U.S. International Development Finance Corporation and MIGA said they had signed a cooperation agreement for a political risk insurance framework for the United States-Ukraine Reconstruction Investment Fund.",
+      "source_url": "https://www.ebrd.com/home/news-and-events/news/2026/ebrd--eu-and-aon-expand-war-risk-insurance-facility-to-meet-evol.html",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "uzb",
+      "name": "Uzbekistan",
+      "iso3": "UZB",
+      "kind": "country",
+      "lat": 41,
+      "lng": 64,
+      "location_basis": "country_centroid",
+      "oecd_category": 5,
+      "oecd_previous": 5,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "ven",
+      "name": "Venezuela",
+      "iso3": "VEN",
+      "kind": "country",
+      "lat": 8,
+      "lng": -66,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "pse",
+      "name": "West Bank and Gaza",
+      "iso3": "PSE",
+      "kind": "country",
+      "lat": 31.9,
+      "lng": 35.2,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "yem",
+      "name": "Yemen",
+      "iso3": "YEM",
+      "kind": "country",
+      "lat": 15,
+      "lng": 48,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "zmb",
+      "name": "Zambia",
+      "iso3": "ZMB",
+      "kind": "country",
+      "lat": -15,
+      "lng": 30,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    },
+    {
+      "id": "zwe",
+      "name": "Zimbabwe",
+      "iso3": "ZWE",
+      "kind": "country",
+      "lat": -20,
+      "lng": 30,
+      "location_basis": "country_centroid",
+      "oecd_category": 7,
+      "oecd_previous": 7,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "exposures": [],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "last_verified": "2026-11-10"
+    }
+  ]
+}
