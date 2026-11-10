@@ -4,6 +4,163 @@
   "schemaVersion": 1,
   "articles": [
     {
+      "id": "un-sudan-power-drones-2026-11-10",
+      "title": "UNICEF says drone strikes on Sudan’s power stations are stopping water treatment",
+      "summary": "UN News reported on 10 November 2026 that a UNICEF spokesperson said not a single day in the last week of October passed without a drone strike on a power station in Sudan, and that up to 15 power stations were hit that month. The spokesperson said that when a power station is struck, water pumps and water treatment stop, and that fuel shortages are making irrigation generators too expensive to run.",
+      "url": "https://news.un.org/en/story/2026/11/1168771",
+      "source": "UN News",
+      "date": "2026-11-10",
+      "coverages": [
+        "political_risk"
+      ],
+      "hotspot_ids": [
+        "sdn"
+      ],
+      "tags": [
+        "sudan",
+        "political violence",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "un-ukraine-security-council-2026-11-09",
+      "title": "Security Council hears of strikes on Ukraine’s power grid and Black Sea shipping",
+      "summary": "UN News reported that the Security Council met on Ukraine on 9 November 2026. It said Russian strikes on energy infrastructure were threatening another winter without power, that strikes on Kyiv’s three main power stations in October left 600,000 people without electricity, and that attacks on Black Sea shipping are threatening navigation and global food security.",
+      "url": "https://news.un.org/en/story/2026/11/1168761",
+      "source": "UN News",
+      "date": "2026-11-09",
+      "coverages": [
+        "political_risk"
+      ],
+      "hotspot_ids": [
+        "ukr"
+      ],
+      "tags": [
+        "ukraine",
+        "political violence",
+        "shipping"
+      ]
+    },
+    {
+      "id": "jt-russia-temporary-administration-2026-11-09",
+      "title": "Japan Tobacco says all of its Russian entities are under temporary administration",
+      "summary": "Japan Tobacco said on 9 November 2026 that presidential decrees dated 5 and 6 November placed all of its entities in Russia under temporary administration, and that the Russian business was continuing to operate. The company said that, under its revised FY2026 forecast, the Russian market accounts for approximately 10 percent of consolidated reported revenue and approximately 25 percent of adjusted operating profit, and that it was still assessing the financial effect.",
+      "url": "https://www.jt.com/media/news/2026/pdf/20261109_02.pdf",
+      "source": "Japan Tobacco",
+      "date": "2026-11-09",
+      "coverages": [
+        "political_risk"
+      ],
+      "hotspot_ids": [
+        "rus"
+      ],
+      "tags": [
+        "russia",
+        "expropriation",
+        "foreign investment"
+      ]
+    },
+    {
+      "id": "treasury-canada-iran-msb-2026-11-06",
+      "title": "U.S. Treasury designates eight Canada-based money services businesses over Iran",
+      "summary": "On 6 November 2026, OFAC designated eight money services businesses based in Canada that it said exchange Iranian rials and other currencies for digital assets and move assets into and out of Iran. Treasury said the action was coordinated with FINTRAC, Canada’s financial intelligence unit, and that property of the designated persons in the United States or held by U.S. persons is blocked unless authorized.",
+      "url": "https://home.treasury.gov/news/press-releases/sb0686",
+      "source": "U.S. Department of the Treasury",
+      "date": "2026-11-06",
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "hotspot_ids": [
+        "irn"
+      ],
+      "tags": [
+        "sanctions",
+        "iran",
+        "canada"
+      ]
+    },
+    {
+      "id": "treasury-iran-maritime-fraud-2026-11-04",
+      "title": "U.S. Treasury designates a network it says flagged ships carrying Iranian petroleum",
+      "summary": "On 4 November 2026, OFAC designated an India-based network it said provided false flags and certifications to sanctioned vessels transporting Iranian petroleum, including vessels operating for the Iranian military and its proxies. The same action designated Türkiye-based Fugo Ground Services Inc for ground handling and other services to sanctioned Iranian airlines. Treasury said property of the designated persons is blocked for U.S. persons unless authorized.",
+      "url": "https://home.treasury.gov/news/press-releases/sb0681",
+      "source": "U.S. Department of the Treasury",
+      "date": "2026-11-04",
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "hotspot_ids": [
+        "irn",
+        "tur"
+      ],
+      "tags": [
+        "sanctions",
+        "iran",
+        "shipping"
+      ]
+    },
+    {
+      "id": "un-myanmar-airstrikes-2026-11-03",
+      "title": "UNICEF reports airstrikes on a school and a health facility in Myanmar",
+      "summary": "UN News reported on 3 November 2026 that UNICEF said an airstrike hit an educational centre used by displaced families in Loikaw Township, Kayah state, with three children reported killed and five injured. The same report said further airstrikes in Rakhine state included one on a temporary healthcare facility that reportedly killed a newborn and healthcare workers.",
+      "url": "https://news.un.org/en/story/2026/11/1168729",
+      "source": "UN News",
+      "date": "2026-11-03",
+      "coverages": [
+        "political_risk"
+      ],
+      "hotspot_ids": [
+        "mmr"
+      ],
+      "tags": [
+        "myanmar",
+        "political violence"
+      ]
+    },
+    {
+      "id": "reuters-senegal-moodys-2026-10-30",
+      "title": "Moody’s cuts Senegal’s foreign-currency rating as a debt restructuring is planned",
+      "summary": "A Reuters report published by CNBC Africa on 30 October 2026 said Moody’s downgraded Senegal’s foreign-currency senior unsecured and long-term issuer ratings to Ca from Caa2 and revised the outlook to stable from negative. It said the move followed the government’s September announcement that it intends to seek a restructuring under the G20 Common Framework, after previously unreported liabilities pushed public debt to about 97 percent of GDP. Moody’s, as reported there, said membership in the West African Economic and Monetary Union helps limit currency and balance-of-payments risk.",
+      "url": "https://www.cnbcafrica.com/2026/moodys-pushes-senegals-foreign-currency-rating-deeper-into-junk",
+      "source": "CNBC Africa",
+      "date": "2026-10-30",
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "hotspot_ids": [
+        "sen"
+      ],
+      "tags": [
+        "senegal",
+        "sovereign debt",
+        "restructuring"
+      ]
+    },
+    {
+      "id": "treasury-rwanda-drc-m23-2026-10-28",
+      "title": "U.S. Treasury sanctions Rwanda’s defence ministry and Zigama over support for M23",
+      "summary": "On 28 October 2026, OFAC designated the Rwandan Ministry of Defence and Zigama Credit and Savings Society. Treasury said the ministry directed Rwanda Defence Force operations alongside the M23 armed group in eastern Democratic Republic of the Congo, and that Zigama facilitated payments for weapons and other military equipment and transactions for M23 and the Congo River Alliance. Treasury also said a Zigama branch enabled the transport of gold from M23-controlled territory to Kigali, and that property of the designated persons is blocked for U.S. persons unless authorized.",
+      "url": "https://home.treasury.gov/news/press-releases/sb0668",
+      "source": "U.S. Department of the Treasury",
+      "date": "2026-10-28",
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "hotspot_ids": [
+        "rwa",
+        "cod"
+      ],
+      "tags": [
+        "sanctions",
+        "rwanda",
+        "democratic republic of the congo"
+      ]
+    },
+    {
       "id": "un-sudan-drones-2026-11-03",
       "title": "UN warns of the impact of drone strikes on civilian infrastructure in Sudan",
       "summary": "UN News reported that the UN Resident and Humanitarian Coordinator in Sudan described intensifying drone attacks disrupting electricity, water, and fuel supplies and delaying humanitarian deliveries.",

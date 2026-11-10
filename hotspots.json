@@ -57,6 +57,51 @@
       "name": "U.S. Maritime Administration advisory 2026-013",
       "url": "https://www.maritime.dot.gov/msci/2026-013-red-sea-bab-el-mandeb-strait-gulf-aden-arabian-sea-and-somali-basin-houthi-attacks",
       "retrieved": "2026-11-10"
+    },
+    {
+      "name": "UN News on Sudan power-station strikes, 10 November 2026",
+      "url": "https://news.un.org/en/story/2026/11/1168771",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "UN News on the Security Council meeting on Ukraine, 9 November 2026",
+      "url": "https://news.un.org/en/story/2026/11/1168761",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "President of Russia, temporary management of Japan Tobacco stakes, 6 November 2026",
+      "url": "http://en.kremlin.ru/acts/news/81193",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "Japan Tobacco update on its business in Russia, 9 November 2026",
+      "url": "https://www.jt.com/media/news/2026/pdf/20261109_02.pdf",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "U.S. Treasury OFAC designations of Canada-based money services businesses, 6 November 2026",
+      "url": "https://home.treasury.gov/news/press-releases/sb0686",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "U.S. Treasury OFAC designations related to Iranian petroleum shipping, 4 November 2026",
+      "url": "https://home.treasury.gov/news/press-releases/sb0681",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "UN News on airstrikes in Myanmar, 3 November 2026",
+      "url": "https://news.un.org/en/story/2026/11/1168729",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "Reuters report, via CNBC Africa, on Moody’s downgrade of Senegal, 30 October 2026",
+      "url": "https://www.cnbcafrica.com/2026/moodys-pushes-senegals-foreign-currency-rating-deeper-into-junk",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "name": "U.S. Treasury OFAC designations of the Rwandan Ministry of Defence and Zigama, 28 October 2026",
+      "url": "https://home.treasury.gov/news/press-releases/sb0668",
+      "retrieved": "2026-11-10"
     }
   ],
   "hotspots": [
@@ -667,9 +712,11 @@
         "political_risk",
         "trade_credit"
       ],
-      "exposures": [],
-      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
-      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "exposures": [
+        "political_violence"
+      ],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 28 October 2026, the U.S. Treasury said the M23 armed group, with support from Rwanda’s security forces, has captured population centers and mining areas in eastern Democratic Republic of the Congo, including gold mines in South Kivu and the Rubaya coltan-mining area in North Kivu. The release said civilians in M23-controlled mining areas have been subjected to forced labor, and it designated the Rwandan Ministry of Defence and Zigama Credit and Savings Society for supporting that activity.",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0668",
       "last_verified": "2026-11-10"
     },
     {
@@ -1077,8 +1124,8 @@
       "exposures": [
         "sanctions"
       ],
-      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 14 September 2026, the U.S. Treasury’s Office of Foreign Assets Control designated VTB Bank for correspondent relationships with sanctioned Iranian banks and said foreign financial institutions that keep dealing with the Iranian regime face secondary sanctions risk. Sanctions of this kind can affect contracts and the collection of payment.",
-      "source_url": "https://home.treasury.gov/news/press-releases/sb0629",
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 14 September 2026, the U.S. Treasury’s Office of Foreign Assets Control designated VTB Bank for correspondent relationships with sanctioned Iranian banks and said foreign financial institutions that keep dealing with the Iranian regime face secondary sanctions risk. Sanctions of this kind can affect contracts and the collection of payment. On 6 November 2026, OFAC designated eight Canada-based money services businesses that it said exchange Iranian rials and other currencies for digital assets and move assets into and out of Iran. Treasury said the action was coordinated with FINTRAC, Canada’s financial intelligence unit, and that property of the designated persons in the United States or held by U.S. persons is blocked unless authorized.",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0686",
       "last_verified": "2026-11-10"
     },
     {
@@ -1568,7 +1615,7 @@
         "political_violence",
         "expropriation"
       ],
-      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. An Office of the UN High Commissioner for Human Rights release dated 25 August 2026, on a report covering 1 June 2025 to 31 May 2026, describes airstrikes, arson, displacement, and denial of assistance by Myanmar’s military, and records unlawful confiscation of land and residential property.",
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. An Office of the UN High Commissioner for Human Rights release dated 25 August 2026, on a report covering 1 June 2025 to 31 May 2026, describes airstrikes, arson, displacement, and denial of assistance by Myanmar’s military, and records unlawful confiscation of land and residential property. On 3 November 2026, UN News reported that UNICEF said an airstrike hit an educational centre used by displaced families in Loikaw Township, Kayah state, with three children reported killed and five injured, and that further airstrikes in Rakhine state included one on a temporary healthcare facility.",
       "source_url": "https://www.ohchr.org/en/press-releases/2026/08/human-rights-situation-myanmar-plummets-new-low-amid-unrelenting-violations",
       "last_verified": "2026-11-10"
     },
@@ -1768,10 +1815,11 @@
         "trade_credit"
       ],
       "exposures": [
+        "expropriation",
         "sanctions"
       ],
-      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 14 September 2026, the U.S. Treasury’s Office of Foreign Assets Control designated VTB Bank for involvement in Iranian sanctions evasion. The release states that VTB was already designated in connection with the Russian financial sector, and that property of the blocked person in the United States or held by U.S. persons is blocked unless authorized. Sanctions of this kind can affect contracts and the collection of payment.",
-      "source_url": "https://home.treasury.gov/news/press-releases/sb0629",
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 14 September 2026, the U.S. Treasury’s Office of Foreign Assets Control designated VTB Bank for involvement in Iranian sanctions evasion. The release states that VTB was already designated in connection with the Russian financial sector, and that property of the blocked person in the United States or held by U.S. persons is blocked unless authorized. Sanctions of this kind can affect contracts and the collection of payment. On 6 November 2026, the President of Russia signed an executive order placing several stakes held by Japan Tobacco Inc. in Russian manufacturing operations under the external management of Promyshlennye Aktivy JSC. The order amends the list of assets subject to temporary management under Executive Order No. 302 of 25 April 2023.",
+      "source_url": "http://en.kremlin.ru/acts/news/81193",
       "last_verified": "2026-11-10"
     },
     {
@@ -1791,9 +1839,11 @@
         "political_risk",
         "trade_credit"
       ],
-      "exposures": [],
-      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
-      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "exposures": [
+        "sanctions"
+      ],
+      "notes": "Prevailing OECD Country Risk Classification category 6, valid as of 16 October 2026. The previous and prevailing categories on that list are both 6. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 28 October 2026, OFAC designated the Rwandan Ministry of Defence and Zigama Credit and Savings Society. Treasury said the ministry directed Rwanda Defence Force operations alongside the M23 armed group in eastern Democratic Republic of the Congo, and that Zigama facilitated payments for weapons and other military equipment and transactions for M23 and the Congo River Alliance. Treasury also said a Zigama branch enabled the transport of gold from M23-controlled territory to Kigali. Property of the designated persons in the United States or held by U.S. persons is blocked unless authorized.",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0668",
       "last_verified": "2026-11-10"
     },
     {
@@ -1816,8 +1866,8 @@
         "trade_credit"
       ],
       "exposures": [],
-      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure.",
-      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure. On 30 October 2026, Reuters reported, in an article published by CNBC Africa, that Moody’s had cut Senegal’s foreign-currency senior unsecured and long-term issuer ratings to Ca from Caa2 and revised the outlook to stable from negative. The report said this followed the government’s September announcement that it intends to seek a debt restructuring under the G20 Common Framework, after previously unreported liabilities pushed public debt to about 97 percent of GDP. It also said Moody’s cited membership in the West African Economic and Monetary Union as limiting currency and balance-of-payments risk.",
+      "source_url": "https://www.cnbcafrica.com/2026/moodys-pushes-senegals-foreign-currency-rating-deeper-into-junk",
       "last_verified": "2026-11-10"
     },
     {
@@ -1928,8 +1978,8 @@
       "exposures": [
         "political_violence"
       ],
-      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 3 November 2026, UN News reported that the UN Resident and Humanitarian Coordinator in Sudan described intensifying drone attacks on civilian infrastructure, disrupting electricity, water, and fuel supplies and delaying humanitarian deliveries.",
-      "source_url": "https://news.un.org/en/story/2026/11/1168731",
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 3 November 2026, UN News reported that the UN Resident and Humanitarian Coordinator in Sudan described intensifying drone attacks on civilian infrastructure, disrupting electricity, water, and fuel supplies and delaying humanitarian deliveries. On 10 November 2026, UN News reported that a UNICEF spokesperson said not a single day in the last week of October passed without a drone strike on a power station in Sudan, that up to 15 were hit in October, and that a strike on a power station stops water pumps and water treatment.",
+      "source_url": "https://news.un.org/en/story/2026/11/1168771",
       "last_verified": "2026-11-10"
     },
     {
@@ -2128,8 +2178,8 @@
         "trade_credit"
       ],
       "exposures": [],
-      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
-      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "notes": "Prevailing OECD Country Risk Classification category 5, valid as of 16 October 2026. The previous and prevailing categories on that list are both 5. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 4 November 2026, OFAC designated Türkiye-based Fugo Ground Services Inc for providing ground handling and other services to U.S.-sanctioned Iranian airlines. The release says property of the designated company in the United States or held by U.S. persons is blocked unless authorized.",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0681",
       "last_verified": "2026-11-10"
     },
     {
@@ -2174,8 +2224,8 @@
       "exposures": [
         "political_violence"
       ],
-      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. Separate from the category, the EBRD said on 13 October 2026 that it is raising its Ukraine war-risk insurance facility from €110 million to €150 million after the earlier capacity was fully used, citing intensifying attacks on energy, transport, logistics, and civilian infrastructure and a renewed blockade of Black Sea ports. On 25 June 2026, the U.S. International Development Finance Corporation and MIGA said they had signed a cooperation agreement for a political risk insurance framework for the United States-Ukraine Reconstruction Investment Fund.",
-      "source_url": "https://www.ebrd.com/home/news-and-events/news/2026/ebrd--eu-and-aon-expand-war-risk-insurance-facility-to-meet-evol.html",
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. Separate from the category, the EBRD said on 13 October 2026 that it is raising its Ukraine war-risk insurance facility from €110 million to €150 million after the earlier capacity was fully used, citing intensifying attacks on energy, transport, logistics, and civilian infrastructure and a renewed blockade of Black Sea ports. On 25 June 2026, the U.S. International Development Finance Corporation and MIGA said they had signed a cooperation agreement for a political risk insurance framework for the United States-Ukraine Reconstruction Investment Fund. On 9 November 2026, UN News reported that the Security Council met on Ukraine, that Russian strikes on energy infrastructure were threatening another winter without power, and that strikes on Kyiv’s three main power stations in October left 600,000 people without electricity. The same report said attacks on Black Sea shipping are threatening navigation and global food security.",
+      "source_url": "https://news.un.org/en/story/2026/11/1168761",
       "last_verified": "2026-11-10"
     },
     {
