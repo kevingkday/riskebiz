@@ -1,6 +1,6 @@
 {
   "_comment": "Source of truth for the trade risk map. A weekly updater may edit this file in a pull request and should not rewrite map.html. Keep these keys stable. Hotspot keys: id, name, iso3 (string or null), kind (country|region), lat, lng, location_basis (country_centroid|named_place), oecd_category (integer or null), oecd_previous (integer or null), oecd_valid_as_of (YYYY-MM-DD or null), oecd_source_url (string or null), oecd_notes (array of OECD footnote numbers as strings), coverages (subset of political_risk, trade_credit, kidnap_ransom), exposures (subset of expropriation, currency_inconvertibility, political_violence, contract_frustration, sovereign_default, buyer_default, sanctions), notes, source_url, last_verified (YYYY-MM-DD). Country coordinates are latlng centroids from https://github.com/mledoze/countries (retrieved 2026-11-10). OECD iso3 XKV (Kosovo) uses that dataset's Kosovo centroid, stored there as cca3 UNK. Do not invent OECD categories. Copy them from the current official PDF. High-income participants marked unclassified, and OECD notes (5), (6), (7), and (8), have no category and are not pinned. Do not add a narrative or an exposure unless a URL in source_url or the notes supports it. kidnap_ransom is not implied by a high OECD category. Bab el-Mandeb uses the OpenStreetMap centroid of relation 11169730.",
-  "lastUpdated": "2026-11-10",
+  "lastUpdated": "2026-11-16",
   "schemaVersion": 1,
   "sources": [
     {
@@ -11,7 +11,7 @@
     {
       "name": "OECD prevailing country risk classification, English PDF, valid as of 16 October 2026",
       "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
-      "retrieved": "2026-11-10"
+      "retrieved": "2026-11-16"
     },
     {
       "name": "Country centroids (mledoze/countries latlng)",
@@ -102,6 +102,36 @@
       "name": "U.S. Treasury OFAC designations of the Rwandan Ministry of Defence and Zigama, 28 October 2026",
       "url": "https://home.treasury.gov/news/press-releases/sb0668",
       "retrieved": "2026-11-10"
+    },
+    {
+      "name": "The Northern Miner on Indonesia’s 70 percent mining-returns target, 16 November 2026",
+      "url": "https://www.northernminer.com/news/indonesia-seeks-70-of-mining-returns-for-state/1003897829/",
+      "retrieved": "2026-11-16"
+    },
+    {
+      "name": "Reuters report, via TimesLIVE, on the IMF and Senegal, 12 November 2026",
+      "url": "https://www.timeslive.co.za/news/africa/2026-11-12-imf-says-senegal-must-implement-budget-framework-to-win-approval-of-22bn-programme/",
+      "retrieved": "2026-11-16"
+    },
+    {
+      "name": "The National on IMF talks with Lebanon, 12 November 2026",
+      "url": "https://www.thenationalnews.com/news/us/2026/11/12/imf-holds-new-talks-with-lebanon-on-revamping-stricken-banking-sector/",
+      "retrieved": "2026-11-16"
+    },
+    {
+      "name": "Xinhua on Myanmar export-earnings retention period, 10 November 2026",
+      "url": "https://english.news.cn/20261110/691e95eb57314a5ea77de52ca88cd573/c.html",
+      "retrieved": "2026-11-16"
+    },
+    {
+      "name": "Global Affairs Canada Russia sanctions announcement, 9 November 2026",
+      "url": "https://www.canada.ca/en/global-affairs/news/2026/11/minister-anand-announces-additional-sanctions-to-reduce-russias-missile-capabilities-and-raise-economic-costs.html",
+      "retrieved": "2026-11-16"
+    },
+    {
+      "name": "Council of the EU Russia listings, 16 November 2026",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/16/ukraine-eu-lists-113-individuals-and-entities-to-further-restrict-russia-s-ability-to-finance-its-war-of-aggression/",
+      "retrieved": "2026-11-16"
     }
   ],
   "hotspots": [
@@ -1105,6 +1135,29 @@
       "last_verified": "2026-11-10"
     },
     {
+      "id": "idn",
+      "name": "Indonesia",
+      "iso3": "IDN",
+      "kind": "country",
+      "lat": -5,
+      "lng": 120,
+      "location_basis": "country_centroid",
+      "oecd_category": 3,
+      "oecd_previous": 3,
+      "oecd_valid_as_of": "2026-10-16",
+      "oecd_source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
+      "oecd_notes": [],
+      "coverages": [
+        "political_risk"
+      ],
+      "exposures": [
+        "expropriation"
+      ],
+      "notes": "Prevailing OECD Country Risk Classification category 3, valid as of 16 October 2026. The previous and prevailing categories on that list are both 3. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 16 November 2026, The Northern Miner reported that President Prabowo Subianto instructed ministers, in a speech on 14 November, that at least 70 percent of the benefit from all mining permits must go to the state, and said that if necessary the shares should be state-controlled. The report said the presidency did not define whether the share would be measured against revenue, profit or another measure, gave no implementation timetable, and left the treatment of existing operations unspecified. Prabowo also called for exports to pass through a designated agency. The report noted that Indonesia already holds a 51 percent interest in PT Freeport Indonesia.",
+      "source_url": "https://www.northernminer.com/news/indonesia-seeks-70-of-mining-returns-for-state/1003897829/",
+      "last_verified": "2026-11-16"
+    },
+    {
       "id": "irn",
       "name": "Iran",
       "iso3": "IRN",
@@ -1323,10 +1376,12 @@
         "political_risk",
         "trade_credit"
       ],
-      "exposures": [],
-      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market.",
-      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/country-risk-classification/cre-crc-current-english.pdf",
-      "last_verified": "2026-11-10"
+      "exposures": [
+        "sovereign_default"
+      ],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 12 November 2026, The National reported that IMF staff held a new round of talks with Lebanon on banking-sector restructuring, and that Finance Minister Yassine Jaber said a law distributing losses between the state, the central bank, commercial banks and depositors remains a sticking point. The report said Lebanon defaulted on its debt for the first time in March 2020, that depositors were left unable to access their savings in the banking crisis, and that the IMF has said Lebanon must implement a 2027 budget and a medium-term fiscal framework to secure any agreement.",
+      "source_url": "https://www.thenationalnews.com/news/us/2026/11/12/imf-holds-new-talks-with-lebanon-on-revamping-stricken-banking-sector/",
+      "last_verified": "2026-11-16"
     },
     {
       "id": "lso",
@@ -1613,11 +1668,12 @@
       ],
       "exposures": [
         "political_violence",
-        "expropriation"
+        "expropriation",
+        "currency_inconvertibility"
       ],
-      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. An Office of the UN High Commissioner for Human Rights release dated 25 August 2026, on a report covering 1 June 2025 to 31 May 2026, describes airstrikes, arson, displacement, and denial of assistance by Myanmar’s military, and records unlawful confiscation of land and residential property. On 3 November 2026, UN News reported that UNICEF said an airstrike hit an educational centre used by displaced families in Loikaw Township, Kayah state, with three children reported killed and five injured, and that further airstrikes in Rakhine state included one on a temporary healthcare facility.",
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. An Office of the UN High Commissioner for Human Rights release dated 25 August 2026, on a report covering 1 June 2025 to 31 May 2026, describes airstrikes, arson, displacement, and denial of assistance by Myanmar’s military, and records unlawful confiscation of land and residential property. On 3 November 2026, UN News reported that UNICEF said an airstrike hit an educational centre used by displaced families in Loikaw Township, Kayah state, with three children reported killed and five injured, and that further airstrikes in Rakhine state included one on a temporary healthcare facility. On 10 November 2026, Xinhua reported that the Central Bank of Myanmar extended, from 30 days to 45 days, the period during which exporters may retain the portion of export earnings they are allowed to use at their discretion in private foreign-currency accounts. The previous 30-day period was set by a notification dated 16 August 2022.",
       "source_url": "https://www.ohchr.org/en/press-releases/2026/08/human-rights-situation-myanmar-plummets-new-low-amid-unrelenting-violations",
-      "last_verified": "2026-11-10"
+      "last_verified": "2026-11-16"
     },
     {
       "id": "nam",
@@ -1818,9 +1874,9 @@
         "expropriation",
         "sanctions"
       ],
-      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 14 September 2026, the U.S. Treasury’s Office of Foreign Assets Control designated VTB Bank for involvement in Iranian sanctions evasion. The release states that VTB was already designated in connection with the Russian financial sector, and that property of the blocked person in the United States or held by U.S. persons is blocked unless authorized. Sanctions of this kind can affect contracts and the collection of payment. On 6 November 2026, the President of Russia signed an executive order placing several stakes held by Japan Tobacco Inc. in Russian manufacturing operations under the external management of Promyshlennye Aktivy JSC. The order amends the list of assets subject to temporary management under Executive Order No. 302 of 25 April 2023.",
-      "source_url": "http://en.kremlin.ru/acts/news/81193",
-      "last_verified": "2026-11-10"
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. On 14 September 2026, the U.S. Treasury’s Office of Foreign Assets Control designated VTB Bank for involvement in Iranian sanctions evasion. The release states that VTB was already designated in connection with the Russian financial sector, and that property of the blocked person in the United States or held by U.S. persons is blocked unless authorized. Sanctions of this kind can affect contracts and the collection of payment. On 6 November 2026, the President of Russia signed an executive order placing several stakes held by Japan Tobacco Inc. in Russian manufacturing operations under the external management of Promyshlennye Aktivy JSC. The order amends the list of assets subject to temporary management under Executive Order No. 302 of 25 April 2023. On 9 November 2026, Global Affairs Canada announced that Canada is listing an additional 38 entities and 24 individuals under the Special Economic Measures (Russia) Regulations, including defence-industry and ballistic-missile actors and financial enablers such as crypto exchanges. On 16 November 2026, the Council of the European Union imposed an asset freeze and related restrictions on 12 individuals and 101 entities, including nearly 50 Russian banks and financial institutions, Russian oil and energy companies, and companies in the United Arab Emirates, China, Seychelles and Oman that buy Russian-origin crude oil products.",
+      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/16/ukraine-eu-lists-113-individuals-and-entities-to-further-restrict-russia-s-ability-to-finance-its-war-of-aggression/",
+      "last_verified": "2026-11-16"
     },
     {
       "id": "rwa",
@@ -1865,10 +1921,12 @@
         "political_risk",
         "trade_credit"
       ],
-      "exposures": [],
-      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure. On 30 October 2026, Reuters reported, in an article published by CNBC Africa, that Moody’s had cut Senegal’s foreign-currency senior unsecured and long-term issuer ratings to Ca from Caa2 and revised the outlook to stable from negative. The report said this followed the government’s September announcement that it intends to seek a debt restructuring under the G20 Common Framework, after previously unreported liabilities pushed public debt to about 97 percent of GDP. It also said Moody’s cited membership in the West African Economic and Monetary Union as limiting currency and balance-of-payments risk.",
-      "source_url": "https://www.cnbcafrica.com/2026/moodys-pushes-senegals-foreign-currency-rating-deeper-into-junk",
-      "last_verified": "2026-11-10"
+      "exposures": [
+        "sovereign_default"
+      ],
+      "notes": "Prevailing OECD Country Risk Classification category 7, valid as of 16 October 2026. The previous and prevailing categories on that list are both 7. The OECD publishes this category for official export-credit premium rates. It measures the risk that a country will not service its external debt, including transfer and convertibility risk and force-majeure events such as war, expropriation, revolution, civil disturbance, floods, and earthquakes. It is not a Riskebiz score and does not identify which of those events applies in this market. The list also applies note (9): under the 2023 Arrangement, sovereign risk is assessed separately so that, on an exceptional basis, a sovereign can be identified as a higher credit risk than the country category. This entry does not print a separate sovereign figure. On 30 October 2026, Reuters reported, in an article published by CNBC Africa, that Moody’s had cut Senegal’s foreign-currency senior unsecured and long-term issuer ratings to Ca from Caa2 and revised the outlook to stable from negative. The report said this followed the government’s September announcement that it intends to seek a debt restructuring under the G20 Common Framework, after previously unreported liabilities pushed public debt to about 97 percent of GDP. It also said Moody’s cited membership in the West African Economic and Monetary Union as limiting currency and balance-of-payments risk. On 12 November 2026, Reuters reported, in an article published by TimesLIVE, that the IMF said Senegal must complete a budget framework, corrective measures on the misreporting of hidden debt, and financing assurances from its partners before the IMF board approves a $2.2 billion lending programme agreed at staff level. The report said the programme underpins Senegal’s strategy to rework its debt, that the National Assembly had previously rejected an amended 2026 budget, and that Senegal’s official creditor committee had not yet been formed.",
+      "source_url": "https://www.timeslive.co.za/news/africa/2026-11-12-imf-says-senegal-must-implement-budget-framework-to-win-approval-of-22bn-programme/",
+      "last_verified": "2026-11-16"
     },
     {
       "id": "sle",

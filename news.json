@@ -1,131 +1,74 @@
 {
-  "_comment": "Source of truth for market notes on the trade risk map and the homepage teaser. Keys: id, title, summary, url, source, date (YYYY-MM-DD), coverages (subset of political_risk, trade_credit, kidnap_ransom), hotspot_ids (ids from hotspots.json), tags (short strings). Add an item only with a working source URL. Do not invent dates or headlines.",
-  "lastUpdated": "2026-11-10",
-  "schemaVersion": 1,
+  "lastUpdated": "2026-11-16",
   "articles": [
     {
-      "id": "un-sudan-power-drones-2026-11-10",
-      "title": "UNICEF says drone strikes on Sudan’s power stations are stopping water treatment",
-      "summary": "UN News reported on 10 November 2026 that a UNICEF spokesperson said not a single day in the last week of October passed without a drone strike on a power station in Sudan, and that up to 15 power stations were hit that month. The spokesperson said that when a power station is struck, water pumps and water treatment stop, and that fuel shortages are making irrigation generators too expensive to run.",
-      "url": "https://news.un.org/en/story/2026/11/1168771",
-      "source": "UN News",
-      "date": "2026-11-10",
+      "id": "northernminer-indonesia-mining-70pct-2026-11-16",
+      "title": "Indonesia seeks at least 70% of mining returns for the state",
+      "summary": "The Northern Miner reported on 16 November 2026 that President Prabowo Subianto instructed ministers that the state should receive at least 70 percent of the benefit from mining permits, and said that if necessary shares should be state-controlled. The report said the presidency did not define how the share would be measured or give an implementation timetable, and that Prabowo also called for exports to pass through a designated agency.",
+      "url": "https://www.northernminer.com/news/indonesia-seeks-70-of-mining-returns-for-state/1003897829/",
+      "source": "The Northern Miner",
+      "date": "2026-11-16",
       "coverages": [
         "political_risk"
       ],
       "hotspot_ids": [
-        "sdn"
+        "idn"
       ],
       "tags": [
-        "sudan",
-        "political violence",
-        "infrastructure"
+        "indonesia",
+        "mining",
+        "expropriation",
+        "resource nationalism",
+        "foreign investment"
       ]
     },
     {
-      "id": "un-ukraine-security-council-2026-11-09",
-      "title": "Security Council hears of strikes on Ukraine’s power grid and Black Sea shipping",
-      "summary": "UN News reported that the Security Council met on Ukraine on 9 November 2026. It said Russian strikes on energy infrastructure were threatening another winter without power, that strikes on Kyiv’s three main power stations in October left 600,000 people without electricity, and that attacks on Black Sea shipping are threatening navigation and global food security.",
-      "url": "https://news.un.org/en/story/2026/11/1168761",
-      "source": "UN News",
-      "date": "2026-11-09",
+      "id": "consilium-eu-russia-listings-2026-11-16",
+      "title": "EU lists 113 individuals and entities, including nearly 50 Russian banks",
+      "summary": "On 16 November 2026 the Council of the EU imposed an asset freeze and related restrictions on 12 individuals and 101 entities, including nearly 50 Russian banks and financial institutions, energy companies and buyers of Russian-origin crude oil products in the UAE, China, Seychelles and Oman. Listings of this kind can affect payment channels and counterparties for trade involving Russia.",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/16/ukraine-eu-lists-113-individuals-and-entities-to-further-restrict-russia-s-ability-to-finance-its-war-of-aggression/",
+      "source": "Council of the European Union",
+      "date": "2026-11-16",
       "coverages": [
-        "political_risk"
-      ],
-      "hotspot_ids": [
-        "ukr"
-      ],
-      "tags": [
-        "ukraine",
-        "political violence",
-        "shipping"
-      ]
-    },
-    {
-      "id": "jt-russia-temporary-administration-2026-11-09",
-      "title": "Japan Tobacco says all of its Russian entities are under temporary administration",
-      "summary": "Japan Tobacco said on 9 November 2026 that presidential decrees dated 5 and 6 November placed all of its entities in Russia under temporary administration, and that the Russian business was continuing to operate. The company said that, under its revised FY2026 forecast, the Russian market accounts for approximately 10 percent of consolidated reported revenue and approximately 25 percent of adjusted operating profit, and that it was still assessing the financial effect.",
-      "url": "https://www.jt.com/media/news/2026/pdf/20261109_02.pdf",
-      "source": "Japan Tobacco",
-      "date": "2026-11-09",
-      "coverages": [
-        "political_risk"
+        "political_risk",
+        "trade_credit"
       ],
       "hotspot_ids": [
         "rus"
       ],
       "tags": [
         "russia",
-        "expropriation",
-        "foreign investment"
-      ]
-    },
-    {
-      "id": "treasury-canada-iran-msb-2026-11-06",
-      "title": "U.S. Treasury designates eight Canada-based money services businesses over Iran",
-      "summary": "On 6 November 2026, OFAC designated eight money services businesses based in Canada that it said exchange Iranian rials and other currencies for digital assets and move assets into and out of Iran. Treasury said the action was coordinated with FINTRAC, Canada’s financial intelligence unit, and that property of the designated persons in the United States or held by U.S. persons is blocked unless authorized.",
-      "url": "https://home.treasury.gov/news/press-releases/sb0686",
-      "source": "U.S. Department of the Treasury",
-      "date": "2026-11-06",
-      "coverages": [
-        "political_risk",
-        "trade_credit"
-      ],
-      "hotspot_ids": [
-        "irn"
-      ],
-      "tags": [
         "sanctions",
-        "iran",
-        "canada"
+        "banks",
+        "shadow fleet"
       ]
     },
     {
-      "id": "treasury-iran-maritime-fraud-2026-11-04",
-      "title": "U.S. Treasury designates a network it says flagged ships carrying Iranian petroleum",
-      "summary": "On 4 November 2026, OFAC designated an India-based network it said provided false flags and certifications to sanctioned vessels transporting Iranian petroleum, including vessels operating for the Iranian military and its proxies. The same action designated Türkiye-based Fugo Ground Services Inc for ground handling and other services to sanctioned Iranian airlines. Treasury said property of the designated persons is blocked for U.S. persons unless authorized.",
-      "url": "https://home.treasury.gov/news/press-releases/sb0681",
-      "source": "U.S. Department of the Treasury",
-      "date": "2026-11-04",
-      "coverages": [
-        "political_risk",
-        "trade_credit"
-      ],
-      "hotspot_ids": [
-        "irn",
-        "tur"
-      ],
-      "tags": [
-        "sanctions",
-        "iran",
-        "shipping"
-      ]
-    },
-    {
-      "id": "un-myanmar-airstrikes-2026-11-03",
-      "title": "UNICEF reports airstrikes on a school and a health facility in Myanmar",
-      "summary": "UN News reported on 3 November 2026 that UNICEF said an airstrike hit an educational centre used by displaced families in Loikaw Township, Kayah state, with three children reported killed and five injured. The same report said further airstrikes in Rakhine state included one on a temporary healthcare facility that reportedly killed a newborn and healthcare workers.",
-      "url": "https://news.un.org/en/story/2026/11/1168729",
-      "source": "UN News",
-      "date": "2026-11-03",
+      "id": "miningsee-gabriel-resources-icsid-2026-11-15",
+      "title": "Gabriel Resources warns of insolvency after ICSID committee rejects Roșia Montană annulment bid",
+      "summary": "Mining South East Europe reported on 15 November 2026 that an ICSID ad hoc committee dismissed Canadian company Gabriel Resources' application to annul the 2024 award that rejected its claims against Romania over the Roșia Montană project. The company said the decision leaves in force an order to pay about $10 million of Romania's costs plus interest and has material implications for its ability to continue as a going concern.",
+      "url": "https://www.miningsee.eu/gabriel-resources-warns-of-insolvency-after-losing-rosia-montana-annulment-bid-against-romania/",
+      "source": "Mining South East Europe",
+      "date": "2026-11-15",
       "coverages": [
         "political_risk"
       ],
-      "hotspot_ids": [
-        "mmr"
-      ],
+      "hotspot_ids": [],
       "tags": [
-        "myanmar",
-        "political violence"
+        "romania",
+        "canada",
+        "mining",
+        "investment arbitration",
+        "icsid"
       ]
     },
     {
-      "id": "reuters-senegal-moodys-2026-10-30",
-      "title": "Moody’s cuts Senegal’s foreign-currency rating as a debt restructuring is planned",
-      "summary": "A Reuters report published by CNBC Africa on 30 October 2026 said Moody’s downgraded Senegal’s foreign-currency senior unsecured and long-term issuer ratings to Ca from Caa2 and revised the outlook to stable from negative. It said the move followed the government’s September announcement that it intends to seek a restructuring under the G20 Common Framework, after previously unreported liabilities pushed public debt to about 97 percent of GDP. Moody’s, as reported there, said membership in the West African Economic and Monetary Union helps limit currency and balance-of-payments risk.",
-      "url": "https://www.cnbcafrica.com/2026/moodys-pushes-senegals-foreign-currency-rating-deeper-into-junk",
-      "source": "CNBC Africa",
-      "date": "2026-10-30",
+      "id": "timeslive-reuters-senegal-imf-2026-11-12",
+      "title": "IMF says Senegal must implement budget framework to win approval of $2.2bn programme",
+      "summary": "Reuters, in a report published by TimesLIVE on 12 November 2026, said the IMF wants Senegal to complete a budget framework, corrective measures on misreported debt and financing assurances from partners before its board approves a $2.2 billion programme. The report said the programme underpins Senegal's strategy to rework its debt and that the official creditor committee had not yet been formed.",
+      "url": "https://www.timeslive.co.za/news/africa/2026-11-12-imf-says-senegal-must-implement-budget-framework-to-win-approval-of-22bn-programme/",
+      "source": "TimesLIVE (Reuters)",
+      "date": "2026-11-12",
       "coverages": [
         "political_risk",
         "trade_credit"
@@ -136,28 +79,89 @@
       "tags": [
         "senegal",
         "sovereign debt",
-        "restructuring"
+        "imf",
+        "debt restructuring"
       ]
     },
     {
-      "id": "treasury-rwanda-drc-m23-2026-10-28",
-      "title": "U.S. Treasury sanctions Rwanda’s defence ministry and Zigama over support for M23",
-      "summary": "On 28 October 2026, OFAC designated the Rwandan Ministry of Defence and Zigama Credit and Savings Society. Treasury said the ministry directed Rwanda Defence Force operations alongside the M23 armed group in eastern Democratic Republic of the Congo, and that Zigama facilitated payments for weapons and other military equipment and transactions for M23 and the Congo River Alliance. Treasury also said a Zigama branch enabled the transport of gold from M23-controlled territory to Kigali, and that property of the designated persons is blocked for U.S. persons unless authorized.",
-      "url": "https://home.treasury.gov/news/press-releases/sb0668",
-      "source": "U.S. Department of the Treasury",
-      "date": "2026-10-28",
+      "id": "thenational-lebanon-imf-banking-2026-11-12",
+      "title": "IMF holds new talks with Lebanon on bank restructuring strategy",
+      "summary": "The National reported on 12 November 2026 that IMF staff held a new round of talks with Lebanon focused on banking-sector restructuring, with a law distributing losses between the state, central bank, commercial banks and depositors still a sticking point. The report noted Lebanon defaulted on its debt in March 2020 and that the IMF has said a 2027 budget and medium-term fiscal framework are needed for any agreement.",
+      "url": "https://www.thenationalnews.com/news/us/2026/11/12/imf-holds-new-talks-with-lebanon-on-revamping-stricken-banking-sector/",
+      "source": "The National",
+      "date": "2026-11-12",
       "coverages": [
         "political_risk",
         "trade_credit"
       ],
       "hotspot_ids": [
-        "rwa",
-        "cod"
+        "lbn"
       ],
       "tags": [
-        "sanctions",
-        "rwanda",
-        "democratic republic of the congo"
+        "lebanon",
+        "sovereign default",
+        "banking",
+        "imf"
+      ]
+    },
+    {
+      "id": "gtr-canada-edc-bdc-merger-2026-11-11",
+      "title": "Canada to merge Export Development Canada and the Business Development Bank of Canada",
+      "summary": "Global Trade Review reported on 11 November 2026 that Canada's 2026 Budget plans to merge EDC and BDC into a single federal development bank, with the Canadian Commercial Corporation becoming an EDC subsidiary. EDC said there is no confirmed merger date, it remains fully operational, and it does not anticipate changes to existing contractual commitments with customers.",
+      "url": "https://www.gtreview.com/news/americas/canada-to-merge-export-credit-agency-and-business-development-bank/",
+      "source": "Global Trade Review",
+      "date": "2026-11-11",
+      "coverages": [
+        "trade_credit",
+        "political_risk"
+      ],
+      "hotspot_ids": [],
+      "tags": [
+        "canada",
+        "export credit",
+        "edc",
+        "trade finance"
+      ]
+    },
+    {
+      "id": "xinhua-myanmar-export-earnings-2026-11-10",
+      "title": "Myanmar extends export earnings retention period from 30 to 45 days",
+      "summary": "Xinhua reported on 10 November 2026 that the Central Bank of Myanmar extended, from 30 to 45 days, the period exporters may retain the discretionary portion of export earnings in private foreign-currency accounts. The previous 30-day rule dated from a notification of 16 August 2022.",
+      "url": "https://english.news.cn/20261110/691e95eb57314a5ea77de52ca88cd573/c.html",
+      "source": "Xinhua",
+      "date": "2026-11-10",
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "hotspot_ids": [
+        "mmr"
+      ],
+      "tags": [
+        "myanmar",
+        "foreign exchange",
+        "currency transfer",
+        "export proceeds"
+      ]
+    },
+    {
+      "id": "gac-canada-russia-sanctions-2026-11-09",
+      "title": "Canada lists 38 entities and 24 individuals under its Russia sanctions regulations",
+      "summary": "Global Affairs Canada announced on 9 November 2026 that Canada is listing 38 entities and 24 individuals under the Special Economic Measures (Russia) Regulations, targeting defence-industry, ballistic missile and cyber actors and financial enablers including crypto exchanges. The release says the measures are also intended to raise the economic costs of Russia’s war against Ukraine.",
+      "url": "https://www.canada.ca/en/global-affairs/news/2026/11/minister-anand-announces-additional-sanctions-to-reduce-russias-missile-capabilities-and-raise-economic-costs.html",
+      "source": "Global Affairs Canada",
+      "date": "2026-11-09",
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "hotspot_ids": [
+        "rus"
+      ],
+      "tags": [
+        "russia",
+        "canada",
+        "sanctions"
       ]
     }
   ]
