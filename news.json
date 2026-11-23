@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-16",
+  "lastUpdated": "2026-11-23",
   "articles": [
     {
-      "id": "northernminer-indonesia-mining-70pct-2026-11-16",
-      "title": "Indonesia seeks at least 70% of mining returns for the state",
-      "summary": "The Northern Miner reported on 16 November 2026 that President Prabowo Subianto instructed ministers that the state should receive at least 70 percent of the benefit from mining permits, and said that if necessary shares should be state-controlled. The report said the presidency did not define how the share would be measured or give an implementation timetable, and that Prabowo also called for exports to pass through a designated agency.",
-      "url": "https://www.northernminer.com/news/indonesia-seeks-70-of-mining-returns-for-state/1003897829/",
-      "source": "The Northern Miner",
-      "date": "2026-11-16",
+      "id": "tempo-indonesia-mining-formula-2026-11-23",
+      "title": "Indonesia has not finalized how the state would take 70% of mining proceeds",
+      "summary": "Tempo reported on 23 November 2026 that Coordinating Minister Bahlil Lahadalia said the government has not finalized whether a proposed 70 percent state share of mining proceeds would be held through company shares or through revenue, and that existing contracts are being reviewed. He said the proposal is not final. The report said the Indonesian Nickel Industry Forum was still waiting for details, and that a 70:30 gross-split idea discussed earlier was not applied to coal and mineral mining.",
+      "url": "https://en.tempo.co/read/2124226/how-will-indonesia-secure-70-of-mining-revenue-for-the-state",
+      "source": "Tempo",
+      "date": "2026-11-23",
       "coverages": [
         "political_risk"
       ],
@@ -18,57 +18,37 @@
         "indonesia",
         "mining",
         "expropriation",
-        "resource nationalism",
         "foreign investment"
       ]
     },
     {
-      "id": "consilium-eu-russia-listings-2026-11-16",
-      "title": "EU lists 113 individuals and entities, including nearly 50 Russian banks",
-      "summary": "On 16 November 2026 the Council of the EU imposed an asset freeze and related restrictions on 12 individuals and 101 entities, including nearly 50 Russian banks and financial institutions, energy companies and buyers of Russian-origin crude oil products in the UAE, China, Seychelles and Oman. Listings of this kind can affect payment channels and counterparties for trade involving Russia.",
-      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/16/ukraine-eu-lists-113-individuals-and-entities-to-further-restrict-russia-s-ability-to-finance-its-war-of-aggression/",
-      "source": "Council of the European Union",
-      "date": "2026-11-16",
+      "id": "treasury-iran-oil-trustees-2026-11-20",
+      "title": "U.S. Treasury designates intermediaries it says sell Iranian oil",
+      "summary": "On 20 November 2026 the U.S. Treasury designated Mohammad Javad Bavand and Majid Taj under Executive Order 13902 for operating in Iran’s petroleum sector, and designated Mohammadhossein Servati and Mojtaba Arabnejad under Executive Order 13224. Treasury said Bavand and Taj are used to sell Iranian oil abroad and that, in many cases, the intermediaries have kept the oil revenue. It said property of the designated persons in the United States or held by U.S. persons is blocked unless authorized.",
+      "url": "https://home.treasury.gov/news/press-releases/sb0697",
+      "source": "U.S. Department of the Treasury",
+      "date": "2026-11-20",
       "coverages": [
         "political_risk",
         "trade_credit"
       ],
       "hotspot_ids": [
-        "rus"
+        "irn"
       ],
       "tags": [
-        "russia",
+        "iran",
         "sanctions",
-        "banks",
-        "shadow fleet"
+        "oil",
+        "petroleum"
       ]
     },
     {
-      "id": "miningsee-gabriel-resources-icsid-2026-11-15",
-      "title": "Gabriel Resources warns of insolvency after ICSID committee rejects Roșia Montană annulment bid",
-      "summary": "Mining South East Europe reported on 15 November 2026 that an ICSID ad hoc committee dismissed Canadian company Gabriel Resources' application to annul the 2024 award that rejected its claims against Romania over the Roșia Montană project. The company said the decision leaves in force an order to pay about $10 million of Romania's costs plus interest and has material implications for its ability to continue as a going concern.",
-      "url": "https://www.miningsee.eu/gabriel-resources-warns-of-insolvency-after-losing-rosia-montana-annulment-bid-against-romania/",
-      "source": "Mining South East Europe",
-      "date": "2026-11-15",
-      "coverages": [
-        "political_risk"
-      ],
-      "hotspot_ids": [],
-      "tags": [
-        "romania",
-        "canada",
-        "mining",
-        "investment arbitration",
-        "icsid"
-      ]
-    },
-    {
-      "id": "timeslive-reuters-senegal-imf-2026-11-12",
-      "title": "IMF says Senegal must implement budget framework to win approval of $2.2bn programme",
-      "summary": "Reuters, in a report published by TimesLIVE on 12 November 2026, said the IMF wants Senegal to complete a budget framework, corrective measures on misreported debt and financing assurances from partners before its board approves a $2.2 billion programme. The report said the programme underpins Senegal's strategy to rework its debt and that the official creditor committee had not yet been formed.",
-      "url": "https://www.timeslive.co.za/news/africa/2026-11-12-imf-says-senegal-must-implement-budget-framework-to-win-approval-of-22bn-programme/",
-      "source": "TimesLIVE (Reuters)",
-      "date": "2026-11-12",
+      "id": "cnbcafrica-reuters-senegal-budget-2026-11-19",
+      "title": "Senegal’s president says he will implement 2026 budget changes by decree",
+      "summary": "Reuters, in a report published by CNBC Africa on 19 November 2026, said President Bassirou Diomaye Faye would implement changes to the 2026 budget by decree after parliament rejected them, and that lawmakers had also voted against a 2027 budget bill. The report said the bills are key to advancing an IMF staff-level agreement for a three-year $2.2 billion programme that still requires Executive Board approval, and that the government has agreed to rework its debt under the G20 Common Framework.",
+      "url": "https://www.cnbcafrica.com/2026/senegal-president-implements-2026-budget-changes-by-decree-amid-impasse-with-parliament",
+      "source": "CNBC Africa (Reuters)",
+      "date": "2026-11-19",
       "coverages": [
         "political_risk",
         "trade_credit"
@@ -80,88 +60,116 @@
         "senegal",
         "sovereign debt",
         "imf",
-        "debt restructuring"
+        "budget"
       ]
     },
     {
-      "id": "thenational-lebanon-imf-banking-2026-11-12",
-      "title": "IMF holds new talks with Lebanon on bank restructuring strategy",
-      "summary": "The National reported on 12 November 2026 that IMF staff held a new round of talks with Lebanon focused on banking-sector restructuring, with a law distributing losses between the state, central bank, commercial banks and depositors still a sticking point. The report noted Lebanon defaulted on its debt in March 2020 and that the IMF has said a 2027 budget and medium-term fiscal framework are needed for any agreement.",
-      "url": "https://www.thenationalnews.com/news/us/2026/11/12/imf-holds-new-talks-with-lebanon-on-revamping-stricken-banking-sector/",
-      "source": "The National",
-      "date": "2026-11-12",
+      "id": "brecorder-reuters-ukraine-port-2026-11-19",
+      "title": "Russia says strikes hit Odesa power substations, Chornomorsk port fuel storage and a cargo ship",
+      "summary": "Reuters, in a report published by Business Recorder on 19 November 2026, said Russia’s defence ministry reported overnight drone strikes on two power substations in the Odesa region, fuel-storage facilities at the port of Chornomorsk, and a cargo ship the ministry said was carrying dual-use goods to Odesa. The ministry also said a power substation in Sumy was struck.",
+      "url": "https://www.brecorder.com/news/40449696",
+      "source": "Business Recorder (Reuters)",
+      "date": "2026-11-19",
+      "coverages": [
+        "political_risk"
+      ],
+      "hotspot_ids": [
+        "ukr"
+      ],
+      "tags": [
+        "ukraine",
+        "political violence",
+        "ports",
+        "shipping",
+        "energy"
+      ]
+    },
+    {
+      "id": "gazette-canada-iran-relisting-2026-11-18",
+      "title": "Canada Gazette publishes the relisting of 11 Iranian oil, nuclear, bank and insurance entities",
+      "summary": "The 18 November 2026 Canada Gazette published SOR/2026-234, registered on 5 November 2026, adding 11 entities to the Special Economic Measures (Iran) Regulations, including the National Iranian Oil Company, National Iranian Tanker Company, Bank Mellat, Bank Melli Iran, the Export Development Bank of Iran and Iran Insurance Company. The regulatory impact statement says the entities were listed in 2013, delisted in 2016, and are being relisted, and that the measures freeze assets they may hold in Canada and prohibit persons in Canada and Canadians abroad from making property available to them.",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2026/2026-11-18/html/sor-dors234-eng.html",
+      "source": "Canada Gazette",
+      "date": "2026-11-18",
       "coverages": [
         "political_risk",
         "trade_credit"
       ],
       "hotspot_ids": [
-        "lbn"
+        "irn"
       ],
       "tags": [
-        "lebanon",
-        "sovereign default",
-        "banking",
-        "imf"
+        "iran",
+        "canada",
+        "sanctions",
+        "oil",
+        "banks"
       ]
     },
     {
-      "id": "gtr-canada-edc-bdc-merger-2026-11-11",
-      "title": "Canada to merge Export Development Canada and the Business Development Bank of Canada",
-      "summary": "Global Trade Review reported on 11 November 2026 that Canada's 2026 Budget plans to merge EDC and BDC into a single federal development bank, with the Canadian Commercial Corporation becoming an EDC subsidiary. EDC said there is no confirmed merger date, it remains fully operational, and it does not anticipate changes to existing contractual commitments with customers.",
-      "url": "https://www.gtreview.com/news/americas/canada-to-merge-export-credit-agency-and-business-development-bank/",
+      "id": "treasury-hizballah-gold-2026-11-18",
+      "title": "U.S. Treasury designates a Lebanon- and Türkiye-based gold and cash network",
+      "summary": "On 18 November 2026 the U.S. Treasury designated the Lebanon-based Wa Ta'awanu Association and members of a Lebanon- and Türkiye-based gold and cash network it said moves funds from Iran’s Islamic Revolutionary Guard Corps-Qods Force to Hizballah. The designated companies include Lebanon-based Gold Global Company and Türkiye-based Sankari Gold. Treasury said property of the designated persons in the United States or held by U.S. persons is blocked unless authorized.",
+      "url": "https://home.treasury.gov/news/press-releases/sb0692",
+      "source": "U.S. Department of the Treasury",
+      "date": "2026-11-18",
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "hotspot_ids": [
+        "lbn",
+        "tur",
+        "irn"
+      ],
+      "tags": [
+        "lebanon",
+        "turkiye",
+        "iran",
+        "sanctions",
+        "gold"
+      ]
+    },
+    {
+      "id": "mena-egypt-imf-review-2026-11-18",
+      "title": "IMF staff and Egypt reach agreement on the final Extended Fund Facility review",
+      "summary": "The Middle East News Agency reported on 18 November 2026 that IMF staff and Egypt reached a staff-level agreement on the eighth and final Extended Fund Facility review and the third Resilience and Sustainability Facility review, subject to Executive Board approval. The report said approval would release about US$1.5 billion under the EFF and up to about US$0.8 billion under the RSF. It said the authorities had allowed the exchange rate to adjust after higher imports widened the current-account deficit, and that gross reserves remained above the IMF’s reserve-adequacy metric.",
+      "url": "https://mena.org.eg/en/news/open-imf-egypt-reach-stafflevel-58124f76-68ad-4fd5-a148-2720b7dc2a67",
+      "source": "Middle East News Agency",
+      "date": "2026-11-18",
+      "coverages": [
+        "political_risk",
+        "trade_credit"
+      ],
+      "hotspot_ids": [
+        "egy"
+      ],
+      "tags": [
+        "egypt",
+        "imf",
+        "exchange rate",
+        "sovereign financing"
+      ]
+    },
+    {
+      "id": "gtr-berne-union-h1-2026-11-18",
+      "title": "Berne Union members underwrote US$2.9tn in the first half of 2026",
+      "summary": "Global Trade Review reported on 18 November 2026 that Berne Union members underwrote US$2.9 trillion of export-credit and investment-insurance risk in the first half of 2026. New medium- and long-term cover was US$125 billion, 26 percent higher than a year earlier, while short-term cover was about 5 percent higher; the Berne Union said political risk insurance continued a long-term decline because new cover was not replacing policies running off. Claims were US$4 billion in the first half, compared with US$3.4 billion a year earlier, and Export Development Canada’s Leah Gilbert Morris was chosen as Berne Union president for a two-year term.",
+      "url": "https://www.gtreview.com/news/global/export-credit-cover-continues-growth-run-berne-union-figures-show/",
       "source": "Global Trade Review",
-      "date": "2026-11-11",
+      "date": "2026-11-18",
       "coverages": [
         "trade_credit",
         "political_risk"
       ],
       "hotspot_ids": [],
       "tags": [
-        "canada",
         "export credit",
-        "edc",
-        "trade finance"
-      ]
-    },
-    {
-      "id": "xinhua-myanmar-export-earnings-2026-11-10",
-      "title": "Myanmar extends export earnings retention period from 30 to 45 days",
-      "summary": "Xinhua reported on 10 November 2026 that the Central Bank of Myanmar extended, from 30 to 45 days, the period exporters may retain the discretionary portion of export earnings in private foreign-currency accounts. The previous 30-day rule dated from a notification of 16 August 2022.",
-      "url": "https://english.news.cn/20261110/691e95eb57314a5ea77de52ca88cd573/c.html",
-      "source": "Xinhua",
-      "date": "2026-11-10",
-      "coverages": [
-        "political_risk",
-        "trade_credit"
-      ],
-      "hotspot_ids": [
-        "mmr"
-      ],
-      "tags": [
-        "myanmar",
-        "foreign exchange",
-        "currency transfer",
-        "export proceeds"
-      ]
-    },
-    {
-      "id": "gac-canada-russia-sanctions-2026-11-09",
-      "title": "Canada lists 38 entities and 24 individuals under its Russia sanctions regulations",
-      "summary": "Global Affairs Canada announced on 9 November 2026 that Canada is listing 38 entities and 24 individuals under the Special Economic Measures (Russia) Regulations, targeting defence-industry, ballistic missile and cyber actors and financial enablers including crypto exchanges. The release says the measures are also intended to raise the economic costs of Russia’s war against Ukraine.",
-      "url": "https://www.canada.ca/en/global-affairs/news/2026/11/minister-anand-announces-additional-sanctions-to-reduce-russias-missile-capabilities-and-raise-economic-costs.html",
-      "source": "Global Affairs Canada",
-      "date": "2026-11-09",
-      "coverages": [
-        "political_risk",
-        "trade_credit"
-      ],
-      "hotspot_ids": [
-        "rus"
-      ],
-      "tags": [
-        "russia",
+        "trade credit",
+        "political risk",
         "canada",
-        "sanctions"
+        "edc",
+        "berne union"
       ]
     }
   ]
